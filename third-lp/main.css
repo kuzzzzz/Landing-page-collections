@@ -81,7 +81,7 @@ img{
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: 6rem; /* re-consider this style 9rem*/
+    margin-top: 9rem; /* re-consider this style 9rem*/
 }
 
 .showcase-content h1{
