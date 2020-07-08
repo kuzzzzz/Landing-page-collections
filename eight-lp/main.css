@@ -58,6 +58,7 @@ img {
 .align-start {
   align-items: flex-start;
 }
+
 .flex div {
   flex: 1;
 }
@@ -143,6 +144,9 @@ footer p a {
     flex-direction: column;
     margin: 1rem;
   }
+  .flex-reverse{
+    flex-direction: column-reverse;
+}
   .footer {
     text-align: left;
   }
