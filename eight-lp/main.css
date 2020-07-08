@@ -18,6 +18,10 @@ img {
 }
 .header-content {
   padding: 1rem;
+  margin-right: 1rem;
+}
+.header-image{
+    padding: 1rem;
 }
 .btn {
   padding: 15px 60px;
