@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Karla", sans-serif;
+  background-color: hsl(204, 43%, 93%);
+  display: flex;
+  padding:20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  min-height: 100vh;
+}
+
+main {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px 10px rgba(0, 0, 0, 0.05);
+  max-width: 800px;
+  width: 97%;
+  margin: 2rem auto;
+  overflow: hidden;
+}
+section {
+  padding: 30px;
+}
+
+.row {
+  display: flex;
+}
+.row > section {
+  flex: 1;
+}
+h1 {
+  color: hsl(179, 62%, 43%);
+  font-size: 2rem;
+}
+
+.yellow-text {
+  color: hsl(71, 73%, 54%);
+}
+
+p {
+  font-size: 1rem;
+  line-height: 2;
+  color: hsl(203, 38%, 61%);
+}
+section.left {
+  background-color: hsl(179, 47%, 60%);
+  color: #fff;
+}
+.left p {
+  color: #fff;
+}
+section.right {
+  background-color: hsl(179, 62%, 43%);
+  color: #fff;
+}
+p.faded {
+    display: flex;
+  color: rgb(161, 236, 206);
+  margin: 0;
+  line-height: 1;
+  align-items: center;
+}
+p.faded span {
+  color: #fff;
+  font-size: 3rem;
+  margin-right: 1rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+button {
+  background-color: hsl(71, 73%, 54%);
+  box-shadow: 0 5px 10px 10px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  padding: 18px 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  margin-top: 1rem;
+  font-family: karla, "sans serif";
+}
+ul {
+  list-style: none;
+  padding: 0;
+  opacity: 0.6;
+}
+ul li {
+  line-height: 28px;
+}
+
+@media screen and (max-width:760px){
+   
+    .row{
+        flex-direction: column;
+    }
+
+}
