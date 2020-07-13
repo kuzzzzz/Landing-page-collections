@@ -6,6 +6,9 @@
   --dark-grayish-violet: hsl(273, 4%, 51%);
   --very-light-gray: hsl(0, 0%, 98%);
 }
+*{
+    box-sizing: border-box;
+}
 body {
     margin: 0;
   font-family: "Karla", sans-serif;
@@ -21,4 +24,40 @@ h3 {
     margin: 0 auto;
     max-width: 100%;
     width: 95%;
+    padding:20px;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.flex > div {
+    flex:1;
+}
+
+
+nav{
+
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+nav li{
+    margin-left: 30px;
+}
+header{
+
+}
+
+section{
+
+}
+
+footer{
+
 }
