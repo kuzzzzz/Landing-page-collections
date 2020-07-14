@@ -20,12 +20,20 @@ h3 {
   font-family: "DM Serif Display", serif;
 }
 
-h1 {
+h1,
+h2 {
   position: relative;
   margin: 0;
   padding-top: 50px;
   font-size: 4rem;
   letter-spacing: 2px;
+}
+h3 {
+  font-size: 2rem;
+}
+p {
+  opacity: 0.8;
+  font-size: 16px;
 }
 h1::before {
   content: "";
@@ -36,6 +44,17 @@ h1::before {
   height: 1px;
   width: 150px;
 }
+
+.line-top::before {
+  content: "";
+  background-color: var(--dark-grayish-violet);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1px;
+  width: 150px;
+}
+
 .btn {
   border: 2px solid #fff;
   padding: 15px 25px;
@@ -51,7 +70,7 @@ h1::before {
 .container {
   margin: 0 auto;
   max-width: 100%;
-  width: 95%;
+  width: 1090px;
   padding: 20px;
 }
 
@@ -122,9 +141,40 @@ header::before {
 }
 .header-image {
   margin-bottom: -250px;
-}
-section {
+  padding-left: 2rem;
 }
 
+.bg-violet {
+  background-color: var(--dark-voilet);
+  padding: 50px;
+  position: relative;
+  margin: 100px auto;
+}
+
+.bg-violet::before {
+  content: "";
+  position: absolute;
+  background-image: url(./images/bg-pattern-how-we-work-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: top right;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+}
+.bg-violet h2 {
+  padding: 0;
+  font-size: 3rem;
+  width: 60%;
+  color: white;
+}
+.tiles {
+  margin-top: 50px;
+  padding: 0 20px;
+}
+.tiles:first-child {
+  padding-left: 0;
+}
 footer {
 }
