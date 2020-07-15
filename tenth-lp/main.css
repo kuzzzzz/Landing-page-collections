@@ -61,6 +61,7 @@ h1::before {
   background-color: transparent;
   color: white;
   letter-spacing: 2px;
+  cursor: pointer;
 }
 
 .btn-reversed {
@@ -107,6 +108,9 @@ nav ul a {
   font-weight: bold;
   word-spacing: 3px;
 }
+header * {
+    z-index: 1;
+}
 header {
   position: relative;
   background-color: var(--dark-voilet);
@@ -115,7 +119,7 @@ header {
   margin-bottom: 250px;
 }
 
-header::after {
+header::before {
   content: "";
   background-image: url(./images/bg-pattern-intro-right-desktop.svg);
   background-repeat: no-repeat;
@@ -127,7 +131,7 @@ header::after {
   width: 50%;
   z-index: 2;
 }
-header::before {
+header::after {
   content: "";
   position: absolute;
   background-image: url(./images/bg-pattern-intro-left-desktop.svg);
@@ -147,22 +151,14 @@ header::before {
 .bg-violet {
   background-color: var(--dark-voilet);
   padding: 50px;
-  position: relative;
+   background-image: url(./images/bg-pattern-how-we-work-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 50% 100%;
   margin: 100px auto;
 }
 
-.bg-violet::before {
-  content: "";
-  position: absolute;
-  background-image: url(./images/bg-pattern-how-we-work-desktop.svg);
-  background-repeat: no-repeat;
-  background-position: top right;
-  top: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  z-index: 0;
-}
+
 .bg-violet h2 {
   padding: 0;
   font-size: 3rem;
@@ -177,4 +173,38 @@ header::before {
   padding-left: 0;
 }
 footer {
+  background-color: var(--very-light-gray);
+  padding: 30px 0;
+ background-image: url(./images/bg-pattern-footer-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+
+
+
+footer h4{
+    text-transform: uppercase;
+    color: var(--grayish-blue);
+}
+footer ul {
+  padding: 0;
+  list-style: none;
+}
+footer ul.flex li {
+    margin-left: 18px;
+}
+
+footer li {
+    margin-bottom: 10px;
+}
+
+footer li a {
+  color: var(--dark-voilet);
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.border-bottom{
+    border-bottom: 1px solid var(--grayish-blue);
+    margin-bottom:30px;
 }
