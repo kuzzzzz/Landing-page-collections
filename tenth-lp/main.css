@@ -62,6 +62,7 @@ h1::before {
   color: white;
   letter-spacing: 2px;
   cursor: pointer;
+  display: inline-block;
 }
 
 .btn-reversed {
@@ -109,7 +110,7 @@ nav ul a {
   word-spacing: 3px;
 }
 header * {
-    z-index: 1;
+  z-index: 1;
 }
 header {
   position: relative;
@@ -151,13 +152,12 @@ header::after {
 .bg-violet {
   background-color: var(--dark-voilet);
   padding: 50px;
-   background-image: url(./images/bg-pattern-how-we-work-desktop.svg);
+  background-image: url(./images/bg-pattern-how-we-work-desktop.svg);
   background-repeat: no-repeat;
   background-position: top right;
   background-size: 50% 100%;
   margin: 100px auto;
 }
-
 
 .bg-violet h2 {
   padding: 0;
@@ -174,28 +174,26 @@ header::after {
 }
 footer {
   background-color: var(--very-light-gray);
-  padding: 30px 0;
- background-image: url(./images/bg-pattern-footer-desktop.svg);
+  padding: 60px 0 30px;
+  background-image: url(./images/bg-pattern-footer-desktop.svg);
   background-repeat: no-repeat;
   background-position: top left;
 }
 
-
-
-footer h4{
-    text-transform: uppercase;
-    color: var(--grayish-blue);
+footer h4 {
+  text-transform: uppercase;
+  color: var(--grayish-blue);
 }
 footer ul {
   padding: 0;
   list-style: none;
 }
-footer ul.flex li {
-    margin-left: 18px;
+footer ul.flex li:not(:first-child) {
+  margin-left: 18px;
 }
 
 footer li {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 footer li a {
@@ -204,7 +202,38 @@ footer li a {
   text-decoration: none;
   text-transform: uppercase;
 }
-.border-bottom{
-    border-bottom: 1px solid var(--grayish-blue);
-    margin-bottom:30px;
+.border-bottom {
+  border-bottom: 1px solid var(--grayish-blue);
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    text-align: center;
+  }
+  .big-violet{
+  background-image: url(./images/bg-pattern-how-we-work-mobile.svg);
+
+  }
+  .bg-violet h2{
+      width: 100%;
+      line-height: 1;
+      margin-bottom: 20px;
+      color: var(--dark-grayish-violet);
+  }
+  footer {
+    background-image: url(./images/bg-pattern-footer-mobile.svg);
+    background-size: 100% auto;
+    background-position: top center;
+    opacity: 0.8;
+  }
+    footer ul.flex {
+    flex-direction: row;
+  }
+  .flex {
+    flex-direction: column;
+  }
+ footer div{
+     width: 100%;
+ }
 }
