@@ -6,6 +6,9 @@
   --dark-grayish-violet: hsl(273, 4%, 51%);
   --very-light-gray: hsl(0, 0%, 98%);
 }
+html{
+    font-size: 15px;
+}
 * {
   box-sizing: border-box;
 }
@@ -73,7 +76,7 @@ h1::before {
   margin: 0 auto;
   max-width: 100%;
   width: 1090px;
-  padding: 20px;
+  padding: 0 20px;
 }
 
 .flex {
@@ -146,7 +149,7 @@ header::after {
 }
 .header-image {
   margin-bottom: -250px;
-  padding-left: 2rem;
+  max-width: 100%;
 }
 
 .bg-violet {
@@ -211,15 +214,54 @@ footer li a {
   body {
     text-align: center;
   }
-  .big-violet{
-  background-image: url(./images/bg-pattern-how-we-work-mobile.svg);
+  .header-image {
+    display: inline-block;
+    margin-left: -20px;
+    margin-bottom: -10px;
+    max-width: calc(100% + 40px);
+  }
+  .flex {
+    flex-direction: column;
+  }
+  header{
+padding-top: 0px;
+margin-bottom: 50px;
 
   }
-  .bg-violet h2{
-      width: 100%;
-      line-height: 1;
-      margin-bottom: 20px;
-      color: var(--dark-grayish-violet);
+  header::before {
+  content: "";
+  background-image: url(./images/bg-pattern-intro-left-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: top right;
+  top: 453px;
+  right: 210px;
+  position: absolute;
+  z-index: 2;
+}
+header::after {
+  content: "";
+  position: absolute;
+  background-image: url(./images/bg-pattern-intro-right-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  top: 600px;
+  right: 0;
+   z-index: 90;
+}
+  .reverse-mobile {
+    flex-direction: column-reverse;
+  }
+  .line-top::before {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .big-violet {
+    background-image: url(./images/bg-pattern-how-we-work-mobile.svg);
+  }
+  .bg-violet h2 {
+    width: 100%;
+    line-height: 1;
+    margin-bottom: 20px;
   }
   footer {
     background-image: url(./images/bg-pattern-footer-mobile.svg);
@@ -227,13 +269,11 @@ footer li a {
     background-position: top center;
     opacity: 0.8;
   }
-    footer ul.flex {
+  footer ul.flex {
     flex-direction: row;
   }
-  .flex {
-    flex-direction: column;
+
+  footer div {
+    width: 100%;
   }
- footer div{
-     width: 100%;
- }
 }
