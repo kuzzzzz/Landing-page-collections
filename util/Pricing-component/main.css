@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(240, 78%, 98%);
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  min-height: 100vh;
+  color: hsl(232, 13%, 33%);
+  background-image: url(./images/bg-top.svg),url(./images/bg-bottom.svg);
+  background-repeat: no-repeat,no-repeat;
+  background-position: top right,bottom left;
+}
+
+.container {
+  margin: auto;
+  max-width: 100%;
+  width: 1000px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+h1 {
+  color: hsl(233, 13%, 49%);
+}
+
+.toggle-container {
+  color: hsl(234, 14%, 74%);
+  margin-bottom: 40px;
+}
+
+.price-box {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 10px;
+  width: 80%;
+  color: hsl(233, 13%, 49%);
+}
+.price-box .monthly{
+    display: none;
+}
+.show-monthly .price-box .monthly{
+display: block;
+}
+.show-monthly .price-box .annually{
+display: none;
+}
+
+.price-box.premium-box {
+  background-image: linear-gradient(
+    to right,
+    hsl(236, 72%, 79%),
+    hsl(237, 63%, 64%)
+  );
+  color: white;
+  transform: scale(1.15);
+}
+.price-box.premium-box > * {
+    transform: scale(0.866);
+    
+}
+.price-box h4 {
+  margin: 0;
+}
+.price-box p {
+  font-size: 40px;
+  margin: 15px 0;
+  color: hsl(232, 13%, 33%);
+}
+
+.price-box ul {
+  border-top: 1px solid hsl(234, 14%, 74%);
+  padding: 0;
+  list-style: none;
+}
+
+.price-box ul li {
+  border-bottom: 1px solid hsl(234, 14%, 74%);
+  padding: 15px 0;
+  font-size: 14px;
+}
+
+.price-box button {
+  background-image: linear-gradient(
+    to right,
+    hsl(236, 72%, 79%),
+    hsl(237, 63%, 64%)
+  );
+  color: white;
+  padding: 13px;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  border: none;
+  text-transform: uppercase;
+  border-radius: 5px;
+  letter-spacing: 2px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.price-box.premium-box button {
+  background-image: none;
+  background-color: white;
+  color: hsl(233, 13%, 49%);
+}
+
+
+.price-box.premium-box ul,
+.price-box.premium-box ul li{
+    border-color: rgba(255, 255, 255, 0.356);
+}
+.price-box.premium-box p{
+    color: white;
+}
+small{
+    font-size: 25px;
+}
