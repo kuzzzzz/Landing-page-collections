@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+:root {
+  --Strong-Cyan: hsl(171, 66%, 44%);
+  --Light-Blue: hsl(233, 100%, 69%);
+  --Dark-Grayish: hsl(210, 10%, 33%);
+  --Grayish-Blue: hsla(198, 25%, 90%, 0.671);
+}
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+  text-align: center;
+  margin: 0;
+  font-size: 18px;
+  color: var(--Dark-Grayish);
+}
+header {
+  background-image: url(./images/bg-header-desktop.png);
+  background-repeat: no-repeat;
+  padding: 80px 0;
+}
+img {
+  max-width: 100%;
+}
+.container {
+  padding: 0 20px;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 1200px;
+}
+.container .image-wrapper {
+  margin-left: -120px;
+  width: 100%;
+}
+.container .image-wrapper img {
+  width: 100%;
+}
+.container .image-wrapper + div {
+  text-align: left;
+}
+.container-small {
+  width: 700px;
+}
+section {
+  padding: 30px 0;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex > * {
+  flex: 1;
+  padding: 1rem;
+}
+.btn {
+  border-radius: 50px;
+  padding: 15px 35px;
+  margin: 15px 10px;
+  font-size: 16px;
+  color: white;
+  border: none;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+}
+.btn-primary {
+  background-color: hsl(171, 66%, 44%);
+  box-shadow: 0 5px 3px hsl(171, 60%, 36%);
+}
+.btn-secondary {
+  background-color: hsl(233, 100%, 69%);
+  box-shadow: 0 5px 3px hsl(233, 71%, 61%);
+}
+footer {
+  background-color: var(--Grayish-Blue);
+  margin-top: 200px;
+}
+
+.footer-logo img {
+  width: 70px;
+}
+footer ul {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  padding: 0;
+  color: var(--Dark-Grayish);
+}
+footer .links {
+  flex: 3;
+}
+footer .links li {
+  padding: 10px;
+  margin-right: 40px;
+}
+footer .social li {
+  margin: 0 auto;
+}
+footer .social img {
+  width: 24px;
+  margin-right: 30px;
+}
+
+@media (max-width: 760px) {
+  .flex {
+    flex-direction: column;
+  }
+  footer .links {
+    flex-direction: column;
+  }
+  footer .links li {
+    margin: 0;
+  }
+  footer .social img {
+    margin: 0 1rem;
+  }
+  .container .image-wrapper {
+    margin-left: 0px;
+  }
+}

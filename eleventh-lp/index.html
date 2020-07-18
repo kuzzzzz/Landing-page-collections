@@ -11,12 +11,13 @@
   <title>Frontend Mentor | Clipboard landing page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <link rel="stylesheet" href="main.css">
+  <!-- <link rel="stylesheet" href="main.css"> -->
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <header>
-    <div class="container-small">
+    <div class="container container-small">
       <img class="logo" src="./images/logo.svg" alt="logo">
       <h1>
         A history of everything you copy
@@ -36,7 +37,7 @@
     </div>
   </header>
 
-  <section class="container-small">
+  <section class="container container-small">
     <h2>
       Keep track of your snippets
     </h2>
@@ -47,22 +48,19 @@
     </p>
   </section>
 
-  <section class="container">
-
-    <img src="./images/image-computer.png" alt="image-computer">
-
-    <div class="container-child">
+  <section class="container flex">
+    <div class="image-wrapper">
+      <img src="./images/image-computer.png" alt="image-computer">
+    </div>
+    <div>
       <h3>Quick Search
       </h3>
       <p>Easily search your snippets by content, category, web address, application, and more.
       </p>
-
-
       <h3>iCloud Sync
       </h3>
       <p>Instantly saves and syncs snippets across all your devices.
       </p>
-
       <h3>Complete History
       </h3>
       <p>Retrieve any snippets from the first moment you started using the app.
@@ -71,32 +69,29 @@
   </section>
 
 
-  <section class="container-small">
-    <div>
-      <h2>Access Clipboard anywhere
-      </h2>
-      <p>Whether you’re on the go, or at your computer, you can access all your Clipboard
-        snippets in a few simple clicks.</p>
-    </div>
-    <div><img src="./images/image-devices.png" alt=""></div>
+  <section class="container container-small">
+    <h2>Access Clipboard anywhere
+    </h2>
+    <p>Whether you’re on the go, or at your computer, you can access all your Clipboard
+      snippets in a few simple clicks.</p>
+    <img src="./images/image-devices.png" alt="">
   </section>
 
-  <section class=container-small">
+  <section class="container">
     <div>
       <h3>Supercharge your workflow
       </h3>
       <p>We’ve got the tools to boost your productivity.
       </p>
     </div>
-    <div class="flex-column">
+    <div class="flex">
+     
       <div><img src="./images/icon-blacklist.svg" alt="">
-
         <h3>Create blacklists
         </h3>
         <p>Ensure sensitive information never makes its way to your clipboard by excluding certain sources.
         </p>
       </div>
-
       <div><img src="./images/icon-text.svg" alt="">
         <h3>Plain text snippets
         </h3>
@@ -112,7 +107,7 @@
     </div>
   </section>
 
-  <section class="flex-column container-small">
+  <section class="flex container">
     <div><img src="./images/logo-google.png" alt=""></div>
     <div><img src="./images/logo-ibm.png" alt=""></div>
     <div><img src="./images/logo-microsoft.png" alt=""></div>
@@ -120,7 +115,7 @@
     <div><img src="./images/logo-vector-graphics.png" alt=""></div>
   </section>
 
-  <section class=" container-small">
+  <section class="container container-small">
     <h2>Clipboard for iOS and Mac OS </h2>
     <p>Available for free on the App Store. Download for Mac or iOS, sync with iCloud
       and you’re ready to start adding to your clipboard.
@@ -131,24 +126,27 @@
     </div>
   </section>
 
-  <footer >
-    <img  src="./images/logo.svg" alt="">
-    <ul>
-      <li>FAQs</li>
-      <li>Contact Us</li>
-      <li>Privacy Policy</li>
-      <li>Press Kit</li>
-      <li>Install Guide</li>
-    </ul>
-    <ul>
-      <li><img src="./images/icon-facebook.svg" alt="">
-      </li>
-      <li><img src="./images/icon-twitter.svg" alt="">
-      </li>
-      <li><img src="./images/icon-instagram.svg" alt="">
-      </li>
-    </ul>
-
+  <footer>
+    <div class="container flex">
+      <div class="footer-logo">
+        <img src="./images/logo.svg" alt="">
+      </div>
+      <ul class="links">
+        <li>FAQs</li>
+        <li>Contact Us</li>
+        <li>Privacy Policy</li>
+        <li>Press Kit</li>
+        <li>Install Guide</li>
+      </ul>
+      <ul class="social">
+        <li><img src="./images/icon-facebook.svg" alt="">
+        </li>
+        <li><img src="./images/icon-twitter.svg" alt="">
+        </li>
+        <li><img src="./images/icon-instagram.svg" alt="">
+        </li>
+      </ul>
+    </div>
   </footer>
 </body>
 
