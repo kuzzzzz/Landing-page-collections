@@ -21,21 +21,23 @@
       Our Pricing
 
     </h1>
+    <!-- Pill toggle Div -->
     <div class="toggle-container">
       <span>
         Annually
       </span>
       <span>
-        <label for="toggle"></label>
-        <input type="checkbox" name="toggle" id="toggle"
-        checked="false">
+        <input type="checkbox" name="toggle" id="toggle" unchecked>
+        <label for="toggle">
+          <div class="ball"></div>
+        </label>
       </span>
       <span>
         Monthly
       </span>
     </div>
 
-    <div class="flex show-monthly">
+    <div id="price-container" class="flex ">
       <div class="price-box">
         <h4>Basic</h4>
         <p>
@@ -90,7 +92,7 @@
     </div>
   </div>
   </div>
-
+  <script src="index.js"></script>
 
 </body>
 
