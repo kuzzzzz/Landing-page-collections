@@ -10,9 +10,21 @@ body {
 section {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   margin: 1rem;
 }
 section h1 {
   text-align: left;
   margin-right: 4rem;
+}
+section button {
+  padding: 10px;
+  font-size: 1rem;
+  font-family: Montserrat;
+}
+
+@media screen and (min-width: 1000px) {
+  section  {
+padding: 0 5rem;
+  }
 }
