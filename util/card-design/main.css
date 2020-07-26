@@ -12,8 +12,10 @@ body {
   font-family: Poppins, sans-serif;
   color: #ffffff;
   display: flex;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .container {
@@ -36,6 +38,7 @@ body {
   /* padding: 1rem 1rem 0 1rem;  */
 }
 .card-info {
+  flex: 1;
   padding: 0 1rem 1rem 1rem;
   background: url(./img/flower.svg) center center no-repeat;
   background-size: cover;
@@ -47,15 +50,15 @@ body {
 }
 .card-info p {
   text-align: justify;
-  height: 150px;
+  margin-bottom: 50px;
   overflow: hidden;
   font-weight: 900;
 }
 
 .card-buttons {
   display: flex;
-  /* justify-content: space-between; */
   justify-content: center;
+  align-items: center;
   padding: 1rem;
 }
 
@@ -76,4 +79,16 @@ body {
 .card-buttons a:nth-child(1) {
   border-top-left-radius: 40px;
   border-bottom-right-radius: 40px;
+}
+
+@media screen and (min-width: 760px) {
+  .card {
+    flex-direction: row;
+  }
+  .card-image {
+    flex: 1;
+  }
+  .card-info{
+    padding-top: 10rem;
+  }
 }
