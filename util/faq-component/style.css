@@ -67,10 +67,10 @@ body {
   color: #454545;
   -webkit-transform: translateX(-50%) rotate(0);
           transform: translateX(-50%) rotate(0);
-  -webkit-transition: -webkit-transform 0.15s ease;
-  transition: -webkit-transform 0.15s ease;
-  transition: transform 0.15s ease;
-  transition: transform 0.15s ease, -webkit-transform 0.15s ease;
+  -webkit-transition: -webkit-transform 0.45s ease;
+  transition: -webkit-transform 0.45s ease;
+  transition: transform 0.45s ease;
+  transition: transform 0.45s ease, -webkit-transform 0.45s ease;
 }
 
 .main .accordion-item .paragraph {
