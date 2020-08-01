@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Allan&family=Montserrat:ital@1&family=Poppins&family=Sofia&display=swap');
+
+/* font-family: 'Allan', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Sofia', cursive; */
+
+:root{
+ --light-gray:#2b3032a1;
+ --primary-color:#45ccb8;
+ --border:#2b303218;
+ --text-color:#ffb86b;
+}
+
+.primary-color{
+    color:var(--primary-color)
+}
+
+.bg-primary-color{
+background-color: var(--primary-color)!important;
+}
+
+.text-color{
+    color:var(--text-color)
+}
+
+.lightblue{
+    color: lightblue;
+}
+
+header {
+    background-color: var(--primary-color);
+}
+
+header.site-title{
+font-family: 'Sofia', cursive; 
+ 
+}
+
+.container .dropdown-toggle,
+.container .dropdown-items{
+    font-size: 0.7em;
+}
+
+.header-links a{
+    color: white;
+}
+
+
+/* Navigation Menu */
+.navbar-nav{
+    padding: 0.8em 0em;
+}
+
+.navbar-nav .navbar-link{
+    font-size: .9em;
+}
