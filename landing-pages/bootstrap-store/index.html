@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="main.css">
+
+    <!-- slick slider -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <script src="https://kit.fontawesome.com/0f36e85703.js" crossorigin="anonymous"></script>
 
 </head>
@@ -29,7 +32,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 col-12 text-center">
-                    <h2 class="my-md-3 site-title text-white">Online Store Text</h2>
+                    <h2 class="my-md-3 site-title text-white">NielsCollection</h2>
                 </div>
                 <div class="col-md-4 col-12 text-right">
                     <p class="my-md-4 header-links">
@@ -56,11 +59,11 @@
                 </div>
 
                 <div class="navbar-nav">
-                    <li class="nav-item border rounded-circle mx-2 search-icons">
+                    <li class="nav-item border rounded-circle mx-2 bag-icons">
                         <i class="fas fa-shopping-bag p-2">
                         </i>
                     </li>
-                    <li class="nav-item border rounded-circle mx-2 bag-icons">
+                    <li class="nav-item border rounded-circle mx-2 search-icons">
                         <i class="fas fa-search p-2">
                         </i>
                     </li>
@@ -69,8 +72,36 @@
         </div>
 
     </header>
+
+
     <!-- main -->
-    <main></main>
+    <main>
+        <!-- first slider -->
+        <div class="container-fluid  p-0">
+            <div class="site-slider">
+                <div class="slider-one">
+                    <div>
+                        <img src="./img/product-image-1177862203_1024x1024@2x.jpg " class="img-fluid" alt="">
+                    </div>
+                    <div>
+                        <img src="./img/product-image-1335752267_1024x1024@2x.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div>
+                        <img src="./img/product-image-1368947757_1024x1024@2x.jpg" class="img-fluid" alt="">
+                    </div>
+                </div>
+                <div class="slider-btn">
+                    <span class="prev position-top">
+                        <i class="fas fa-chevron-left"></i>
+                    </span>
+                    <span class="next position-top right-0">
+                        <i class="fas fa-chevron-right"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+    </main>
     <!-- footer -->
     <footer></footer>
 
@@ -84,6 +115,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>
