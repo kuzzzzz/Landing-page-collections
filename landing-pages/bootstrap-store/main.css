@@ -129,3 +129,46 @@ outline: none;
   margin: 0 auto;
 }
 
+.site-slider-two{
+    position: relative;
+    height: 30%;
+}
+
+.site-slider-two .product{
+    height: 25rem;
+    position: relative;
+    overflow: hidden;
+
+}
+.site-slider-two .product img{
+ width: 100%;
+}
+.site-btn.btn-span{
+padding: .8rem 1.9rem;
+border-radius: 4rem;
+border: 1px solid var(--border);
+background: white;
+color: var(--light-gray);
+}
+.slider-two .slick-track .product:hover span{
+    background: var(--primary-color);
+}
+.site-slider-two .right-0{
+    right: 0;
+}
+
+@media screen and (max-width:760px){
+   .site-btn.btn-span{
+padding: .1rem .1rem;
+font-size: 1rem;
+border-radius: 1rem;
+border: none;
+text-align:center;
+
+}
+.site-slider-two .product{
+    height: 20rem;
+   
+
+}
+}
