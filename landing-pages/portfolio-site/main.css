@@ -1,0 +1,9 @@
+.profile-img{
+    width: 500px;
+}
+.profile-img img{
+    width:100%
+}
+body{
+    color: red;
+}
