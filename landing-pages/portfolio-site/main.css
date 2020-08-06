@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -7,7 +9,7 @@
 html{
     font-size: 10px;
     font-family: cursive,sans-serif;
-    color: chocolate;
+    color: hsl(25, 75%, 47%);
 }
 
 body{
@@ -42,10 +44,92 @@ header{
     width: 100%;
     height: 100vh;
     position: fixed;
+    top: -100vh;
     background-color: #16162d;
     border-bottom-right-radius: 100%;
     border-bottom-left-radius: 100%;
     transition: all 650ms cubic-bezier(1.0,0.1);
 
+}
+
+.nav-list{
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li{
+    margin: 0 2rem;
+}
+
+.nav-link{
+  font-family: 'Lobster', cursive;
+    font-size: 4rem;
+    padding: 1rem;
+    text-decoration: none;
+    color: white
+}
+
+.nav-link:hover,
+.nav-link:focus{
+    background: linear-gradient(to top,#ffe838,#fd57bf);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.top-nav.open{
+    top: 0;
+    border-radius: initial;
+}
+
+.menu-toggle{
+    position: absolute;
+    top: 5rem;
+    right: 5rem;
+    width: 5rem;
+    height: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    z-index: 1500;
+    transition: transform 650ms ease-out;
+}
+
+.menu-toggle.open{
+    transform: rotate(-45deg);
+}
+
+.bar{
+    background: linear-gradient(to right, #ffed38,#fd57bf);
+    width: 100%;
+    height: 4px;
+    border-radius: 1.6rem;
+    
+}
+
+.bar.half-start{
+    transform-origin: right;
+    width: 50%;
+    transition: transform 650ms cubic-bezier(.54,-0.01,0.57,0.5);
+}
+
+.open.bar.half-start{
+    transform: rotate(-450deg) translateX(.8rem);
+}
+
+
+.bar.half-end{
+    transform-origin: left;
+    align-self: flex-end;
+    width: 50%;
+    transition: transform 650ms cubic-bezier(.54,-0.01,0.57,0.5);
+}
+.open.bar.half-end{
+    transform: rotate(-450deg) translateX(-.8rem);
 }
 /* header end */
