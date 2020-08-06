@@ -1,9 +1,17 @@
-.profile-img{
-    width: 500px;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.profile-img img{
-    width:100%
+
+html{
+    font-size: 10px;
+    font-family: cursive,sans-serif;
+    color: rgb(82, 52, 8);
 }
+
 body{
-    color: red;
+    width: 100%;
+    height: 100%;
+    
 }
