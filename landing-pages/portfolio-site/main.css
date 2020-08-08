@@ -47,7 +47,7 @@ header {
   background-color: #16162d;
   border-bottom-right-radius: 100%;
   border-bottom-left-radius: 100%;
-  transition: all 650ms cubic-bezier(1, 0.1);
+  transition: all 650ms ease-in;
 }
 
 .nav-list {
@@ -95,7 +95,7 @@ li {
   justify-content: space-between;
   cursor: pointer;
   z-index: 1500;
-  transition: transform 650ms ease-out;
+  transition: transform 650ms cubic-bezier(0.54, -0.01, 0.57, 0.5);-out;
 }
 
 .menu-toggle.open {
