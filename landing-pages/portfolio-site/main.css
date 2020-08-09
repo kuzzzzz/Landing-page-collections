@@ -18,7 +18,9 @@ body {
   background: url(./img/sitebg.jpg) no-repeat center fixed;
   background-size: cover;
 }
-
+section {
+  padding: 3rem;
+}
 ul {
   text-decoration: none;
 }
@@ -34,7 +36,7 @@ img {
 
 /* Resusable styles  start*/
 
-.container{
+.container {
   width: 90%;
   max-width: 120rem;
   height: 100%;
@@ -42,7 +44,7 @@ img {
   position: relative;
 }
 
-.section-heading{
+.section-heading {
   text-align: center;
   margin-bottom: 10rem;
 }
@@ -58,25 +60,24 @@ img {
 }
 
 .section-heading h1::before,
-.section-heading h1::after{
-content: "";
-position: absolute;
-bottom: .5rem;
-left: 50%;
-transform: translateX(-50%);
-background: rgba(255, 255, 255, .75);
+.section-heading h1::after {
+  content: "";
+  position: absolute;
+  bottom: 0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.75);
 }
 
-
-.section-heading h1::before{
+.section-heading h1::before {
   width: 10rem;
   height: 3px;
-  border-radius: .8rem;
-  top:5rem;
+  border-radius: 0.8rem;
+  top: 5rem;
   background: rgba(255, 255, 0, 0.603);
 }
 
-.section-heading h1::after{
+.section-heading h1::after {
   width: 1.5rem;
   height: 1.5rem;
   border-radius: 100%;
@@ -87,11 +88,9 @@ background: rgba(255, 255, 255, .75);
 .section-heading h6 {
   font-size: 1.6rem;
   font-weight: 300;
-
 }
 
 /* Resusable styles end */
-
 
 /* header start */
 header {
@@ -156,7 +155,7 @@ li {
   justify-content: space-between;
   cursor: pointer;
   z-index: 1500;
-  transition: transform 650ms cubic-bezier(0.54, -0.01, 0.57, 0.5);-out;
+  transition: transform 650ms cubic-bezier(0.54, -0.01, 0.57, 0.5);
 }
 
 .menu-toggle.open {
@@ -217,13 +216,13 @@ li {
 
 /* Start about */
 
-.about .container{
+.about .container {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.about-heading{
+.about-heading {
   text-align: center;
   text-transform: uppercase;
   line-height: 0;
@@ -232,69 +231,71 @@ li {
 
 .about-heading h1 {
   font-size: 10rem;
- font-weight: 300;
-
+  font-weight: 300;
 }
 .about-heading h6 {
   font-size: 2rem;
-  opacity: .3;
-
+  opacity: 0.3;
 }
 
-.profile-img{
-flex: 1;
-margin-right: 5rem;
+.profile-img {
+  flex: 1;
+  margin-right: 5rem;
 }
 
-.about-details{
+.about-details {
   flex: 1;
 }
 
-
-.social-media{
+.social-media {
   margin-top: 5rem;
 }
 
-.social-media i{
- font-size: 5rem;
- transition: color 650ms;
+.social-media i {
+  font-size: 5rem;
+  transition: color 650ms;
 }
 
-.fa-facebook-square:hover{
+.fa-facebook-square:hover {
   color: #4267b2;
 }
-.fa-instagram-square:hover{
-  color: #f33867 ;
+.fa-instagram-square:hover {
+  color: #f33867;
 }
-.fa-twitter-square:hover{
-  color:  #3f729b ;
+.fa-twitter-square:hover {
+  color: #3f729b;
 }
 
 /* end about */
 
 /* Start services */
 
-.my-skills{
+.my-skills {
   margin-top: 10rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   gap: 2.5rem;
   text-align: center;
 }
-.skills{
+
+.skills:last-of-type(div) {
+  justify-self: center;
+  align-self: center;
+}
+.skills {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 2rem;
 }
-.skills h1{
-text-transform: uppercase;
-letter-spacing: 2px;
-margin: 2rem -2px 2rem 0;
+.skills h1 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 2rem -2px 2rem 0;
 }
 
-.icon-container{
+.icon-container {
   width: 10rem;
   height: 10rem;
   border: 3px solid chocolate;
@@ -313,6 +314,44 @@ margin: 2rem -2px 2rem 0;
 /* End services */
 
 /* Start Portfolio */
+.portfolio-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
 
+.portfolio-img {
+  padding: 2rem;
+  flex: 1;
+}
 
+.portfolio-description {
+  flex: 1;
+}
+
+.portfolio-description h1 {
+  font-size: 3rem;
+  font-weight: 300;
+  margin: 1rem 0;
+}
+.portfolio-description h6 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  opacity: 0.3;
+}
+
+.portfolio-description .cta {
+  display: inline-block;
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #388fff;
+  transition: color 600ms;
+}
+.portfolio-description .cta:hover {
+  color: #2f67cd;
+}
 /* End Portfolio */
