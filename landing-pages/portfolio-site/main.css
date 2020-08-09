@@ -54,6 +54,7 @@ img {
   font-weight: 300;
   position: relative;
   margin-bottom: 1rem;
+  margin-top: 2rem;
 }
 
 .section-heading h1::before,
@@ -275,5 +276,43 @@ margin-right: 5rem;
 
 .my-skills{
   margin-top: 10rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
+  gap: 2.5rem;
+  text-align: center;
+}
+.skills{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+.skills h1{
+text-transform: uppercase;
+letter-spacing: 2px;
+margin: 2rem -2px 2rem 0;
+}
+
+.icon-container{
+  width: 10rem;
+  height: 10rem;
+  border: 3px solid chocolate;
+  background: #fd57bf;
+  margin-bottom: 2rem;
+  display: flex;
+  transform: rotate(45deg);
+}
+
+.icon-container i {
+  color: chocolate;
+  font-size: 5rem;
+  transform: rotate(-45deg);
+  margin: auto;
 }
 /* End services */
+
+/* Start Portfolio */
+
+
+/* End Portfolio */
