@@ -512,6 +512,10 @@ input[type="submit"]:hover {
     background: url(./img/sitebg2.jpg) no-repeat center fixed;
     background-size: cover;
   }
+  .menu-toggle {
+    width: 3rem;
+    height: 2rem;
+  }
 
   .landing-text h1 {
     font-size: 9rem;
@@ -521,6 +525,27 @@ input[type="submit"]:hover {
     font-size: 1.4rem;
   }
 
+  .about .container {
+    flex-direction: column;
+  }
+
+  .profile-img {
+    margin: 0 0 7rem 0;
+  }
+
+  .portfolio-item {
+    flex-direction: column;
+  }
+
+  .portfolio-img {
+    margin: 0 0 2rem 0;
+    order: 1;
+  }
+
+  .portfolio-description {
+    margin: 0;
+    order: 2;
+  }
   .nav-list {
     flex-direction: column;
   }
@@ -548,16 +573,15 @@ input[type="submit"]:hover {
     top: 3rem;
   }
 
-
-  .about-details .nav-list{
+  .about-details .nav-list {
     flex-direction: initial;
   }
-  
+
   .about-details li {
-    margin:0 2rem;
+    margin: 0 2rem;
   }
 
-  .icon-container{
+  .icon-container {
     width: 7rem;
     height: 7rem;
   }
@@ -571,10 +595,13 @@ input[type="submit"]:hover {
     padding: 2rem;
   }
 
-  .timeline .date::before{
+  .timeline .date::before {
     left: -16rem;
   }
-  .timeline .date::after{
+  .timeline .date::after {
     left: -3rem;
+  }
+  .up {
+    right: 4rem;
   }
 }
