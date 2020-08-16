@@ -145,7 +145,7 @@ li {
 }
 
 .menu-toggle {
-  position: fixed;
+  position: absolute;
   top: 5rem;
   right: 5rem;
   width: 5rem;
@@ -586,7 +586,7 @@ input[type="submit"]:hover {
     height: 7rem;
   }
 
-  .icon-container i {
+  .icon-container i { 
     font-size: 3rem;
   }
 
