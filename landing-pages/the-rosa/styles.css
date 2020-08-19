@@ -254,3 +254,8 @@ nav {
 }
 
 /* discover our story */
+
+.global-headline{
+    text-align: center;
+    margin-top: 3.9rem;
+}
