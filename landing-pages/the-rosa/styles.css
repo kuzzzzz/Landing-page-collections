@@ -30,6 +30,7 @@ body {
 
 section {
   padding: 3.5rem 0;
+  overflow: hidden;
 }
 
 img {
@@ -234,7 +235,7 @@ nav {
   color: var(--secondary-font-color);
   margin: 0 1.6rem;
   opacity: 0;
-  animation: rotate 5s infinite;
+  animation: rotate  5s infinite;
   /* animation-delay: .5s; */
 }
 
@@ -388,7 +389,6 @@ footer {
   left: 50%;
   transform: translateX(-50%);
   border-radius: 50%;
-
 }
 .back-to-top i {
   display: block;
@@ -396,6 +396,11 @@ footer {
   font-size: 2rem;
   padding: 2rem;
   animation: up 2s infinite;
+
+}
+
+.footer-content{
+  overflow: hidden;
 }
 
 .footer-content h4 {
@@ -628,8 +633,8 @@ footer {
 
 @keyframes up {
   0% {
-    opacity: 0;
-  }
+    opacity:0;
+    }
 
   50% {
     opacity: 1;
