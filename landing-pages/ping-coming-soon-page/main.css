@@ -17,7 +17,8 @@ body {
 }
 
 main{
-    margin-top: 60px;
+    max-width: 650px;
+    margin: 60px auto;
     text-align: center;
 }
 
@@ -36,3 +37,77 @@ h2{
     font-weight: 300;
 }
 
+form{
+margin:40px 0;
+}
+
+input{
+    border:1px solid hsl(223,100%,88%);
+    border-radius: 50px;
+    font-family: 'Libre Franklin',sans-serif;
+    font-size: 16px;
+    padding: 15px 25px;
+    width: 425px;
+    max-width: 100%;
+
+}
+
+input::placeholder{
+    color:hsl(223 , 100%, 88%)
+}
+
+button{
+    background: hsl(223, 87%, 63%);
+    border: none;
+    border-radius: 50px;
+    color: #fff;
+    font-family: "Libre Franklin",sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 20px 60px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+button:hover{
+    opacity: 0.8;
+}
+
+.illustration{
+    max-width: 650px;
+}
+
+.social-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    list-style-type: none;
+}
+
+.social-list li {
+    margin: 10px;
+}
+
+.social-list li a {
+    border: 1px solid hsl(0, 0, 59%);
+    color: hsl(223, 87%, 63%);
+    display: inline-flex;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    height: 40px;
+    width: 40px;
+    text-decoration: none;
+}
+
+.social-list li  a:hover{
+    background-color: hsl(223, 87%, 63%);
+    border-color: hsl(223,87%,63%);
+    color:#fff;
+}
+
+footer p{
+    color:hsl(0,0%,59%)
+}
