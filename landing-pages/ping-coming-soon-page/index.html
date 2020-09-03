@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="main.css">
   <title>Frontend Mentor | Ping coming soon page</title>
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <script defer src="index.js"></script>
   <script src="https://kit.fontawesome.com/0f36e85703.js" crossorigin="anonymous"></script>
 </head>
 
@@ -19,8 +20,12 @@
     <img src="./images/logo.svg" class="logo" alt="">
     <h1> We are launching <strong>soon! </strong> </h1>
     <p>Subscribe and get notified </p>
-    <form action="">
-      <input type="email" name="" id="" placeholder="Your email address">
+    <form action="" id="form">
+      <div class="form-left">
+        <input type="email" name="" id="email" placeholder="Your email address">
+        <small class="error">Please provide a valid email address </small>
+      </div>
+
       <button>
         Notify Me
       </button>
