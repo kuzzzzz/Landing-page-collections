@@ -19,7 +19,12 @@ body {
 main {
   max-width: 650px;
   margin: 60px auto;
+  padding: 20px;
   text-align: center;
+}
+
+.container {
+  margin: 0 auto;
 }
 
 h1 {
@@ -40,13 +45,13 @@ h2 {
 form {
   display: flex;
   margin: 40px 0;
-  align-items:flex-start;
+  align-items: flex-start;
   justify-content: center;
   text-align: left;
 }
 
-.form-left{
-  flex:0.7;
+.form-left {
+  flex: 0.7;
 }
 
 input {
@@ -55,8 +60,9 @@ input {
   font-family: "Libre Franklin", sans-serif;
   font-size: 16px;
   padding: 15px 25px;
-  width: 425px;
+  width: 100%;
   max-width: 100%;
+  margin-bottom: 20px;
 }
 
 input::placeholder {
@@ -64,7 +70,7 @@ input::placeholder {
 }
 form small {
   color: hsl(354, 100%, 66%);
-  display: inline-block;
+  display: none;
   font-style: italic;
   margin: 10px 20px;
   z-index: 10px 20px;
@@ -80,7 +86,7 @@ button {
   padding: 16px 0;
   margin-left: 20px;
   cursor: pointer;
-  flex: 1;
+  flex: 0.3;
 }
 
 button:hover {
@@ -88,7 +94,8 @@ button:hover {
 }
 
 .illustration {
-  max-width: 650px;
+  max-width: 100%; /* Images can cause problems for you if not properly handled */
+  margin: 60px 0;
 }
 
 .social-list {
@@ -126,30 +133,17 @@ footer p {
   color: hsl(0, 0%, 59%);
 }
 
-
-@media screen and (max-width:769px){
-  main{
-    width: 600px;
-    margin: 60px 0;
-  }
-  form{
+@media screen and (max-width: 769px) {
+  form {
     flex-direction: column;
     text-align: center;
   }
 
-  form small{
-    margin: 30px 20px;
-  }
-  .form-left{
-    flex: 1;
+  .form-left {
     width: 100%;
   }
-  input{
-    width:100%;
-  }
 
-  button{
-    flex: 1;
+  button {
     margin-left: 0;
     width: 100%;
   }
