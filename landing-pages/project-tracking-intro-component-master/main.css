@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&display=swap");
-
+*{
+    box-sizing: border-box;
+}
 :root {
   --very-dark-blue: hsl(230, 29%, 20%);
   --dark-grayish-blue: hsl(230, 11%, 40%);
@@ -12,8 +14,19 @@ body {
   color: var(--very-dark-blue);
   font-family: "Barlow", sans-serif;
   font-size: 1.2rem;
+  overflow-x: hidden;
 }
-
+body::after {
+    background-color: var(--light-grayish-blue);
+    border-bottom-left-radius: 100px;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 50vh;
+    width: 50vw;
+    z-index: -1;
+}
 h1,
 h2,
 button,
@@ -70,15 +83,17 @@ button {
   width: 1200px;
 }
 
-
 .container > div {
-  flex: 1;
+  flex: 0.8;
+}
+.container > div:first-child {
+  flex: 1.2;
 }
 
-.flex{
-    display: flex;
-    align-items: center;
-    margin-top: 80px;
+.flex {
+  display: flex;
+  align-items: center;
+  margin-top: 100px;
 }
 nav {
   margin: 40px 0;
@@ -93,6 +108,10 @@ ul {
 ul li {
   margin-left: 40px;
 }
+ul li.active {
+	position: relative;
+	margin-left: 80px;
+}
 
 ul li a {
   color: var(--very-dark-blue);
@@ -100,16 +119,28 @@ ul li a {
   font-weight: 700;
   text-decoration: none;
 }
-
-
-main{
-    display: flex;
-    align-items: center;
-    height: calc(100vh - 250px);
-
+ul li.active a {
+    color: var(--grayish-blue);
+}
+ul li.active::before {
+    border-radius: 50%;
+    background-color: var(--grayish-blue);
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-40px, -50%);
+    opacity: 0.5;
+    height: 8px;
+    width: 8px;
+}
+main {
+  display: flex;
+  align-items: center;
+  height: calc(100vh - 250px);
 }
 
-.illustration{
-    transform: scale(2) translateX(25%);
+.illustration {
+  transform: scale(2) translateX(25%);
 
 }
