@@ -45,8 +45,8 @@ h3 {
   color: var(--grayish-blue);
   font-weight: 400;
   text-transform: uppercase;
-  letter-spacing: 5px;
-  font-size: 1.3rem;
+  letter-spacing: 4px;
+  font-size: 1.2rem;
 }
 h3 span {
   background-color: var(--very-dark-blue);
@@ -77,6 +77,7 @@ button {
 .container {
   display: flex;
   align-items: center;
+  padding:10px 20px;
   justify-content: space-between;
   margin: 0 auto;
   max-width: 100%;
@@ -97,6 +98,10 @@ button {
 }
 nav {
   margin: 40px 0;
+}
+
+.hamburger{
+  display: none;
 }
 
 ul {
@@ -143,4 +148,52 @@ main {
 .illustration {
   transform: scale(2) translateX(25%);
 
+}
+
+@media screen and (max-width:760px){
+  body{
+    font-size: 1rem;
+  }
+  body nav{
+    margin-bottom: 15rem;
+  }
+  h1{
+    font-size: 4rem;
+  }
+.hamburger{
+  display: block;
+}
+
+ul{
+  background-color: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  top: 100px;
+  left: 20px;
+  width: calc(100% - 40px);
+  z-index: 100;
+  position: absolute;
+  flex-direction: column;
+  margin: 0 auto;
+
+}
+ul li {
+  margin: 20px 0;
+  text-align: center;
+}
+
+ul li.active{
+  margin: 40px 0 20px;
+}
+  .mobile-reverse{
+    flex-direction: column-reverse;
+  }
+
+  .flex{
+    margin-top: 50px;
+  }
+
+  .illustration{
+    transform: scale(1) translateX(15%);
+    margin-bottom: 70px;
+  }
 }
