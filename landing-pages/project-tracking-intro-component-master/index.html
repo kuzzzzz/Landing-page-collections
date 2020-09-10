@@ -8,7 +8,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="main.css">
-
+  <script defer src="index.js"> </script>
   <title>Frontend Mentor | Project tracking intro component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -28,7 +28,11 @@
   <nav>
     <div class="container">
       <img src="./images/logo.svg" alt="logo">
-      <a class="hamburger" href="#"><img src="./images/icon-hamburger.svg" alt=""></a>
+
+      <button id="Hamburger" class="hamburger">
+        <img class="icon-hamburger" src="./images/icon-hamburger.svg" alt="" />
+        <img class="icon-close" src="./images/icon-close.svg" alt="close-icon">
+      </button>
       <ul>
         <li><a href=""> Product </a></li>
         <li><a href=""> Features </a></li>
