@@ -1,2 +1,67 @@
-.attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Raleway:400,700&display=swap");
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    color: hsl(243, 87%, 12%);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    margin: 0;
+}
+
+a{
+    color: #3da08f;
+}
+
+img{
+    max-width: 100%;
+}
+
+h1,h2,h4{
+    font-family: 'Raleway', sans-serif;
+}
+
+h2{
+    font-size: 1.3rem;
+    margin-top: 0;
+}
+
+.container{
+    padding: 30px;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 1200px;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.align-start{
+    align-items: flex-start;
+}
+.flex > div,
+.flex > ul {
+flex: 1;
+}
+
+.flex > div:first-child{
+    margin-right: 20px;
+}
+
+.flex > div:last-child{
+    margin-left: 20px;
+}
+
