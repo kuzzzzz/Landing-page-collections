@@ -1,5 +1,5 @@
 :root{
-    --background:#fff;
+    --background:#ff8484;
     --dark:#303032;
     --liquid:blue;
 }
@@ -28,7 +28,7 @@ body{
     height: 8rem;
     width: 8rem;
     outline: 0;
-    overflow: none;
+    overflow: hidden;
 }
 
 .box::before{
