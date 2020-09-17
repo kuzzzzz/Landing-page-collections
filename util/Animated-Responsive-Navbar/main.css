@@ -1,0 +1,34 @@
+:root {
+  font-size: 16px;
+  font-family: 'Open Sans';
+  --text-primary: #b6b6b6;
+  --text-secondary: #ececec;
+  --bg-primary: #23232e;
+  --bg-secondary: #141418;
+  --transition-speed: 600ms;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body::-webkit-scrollbar{
+ width: 0.25rem;  /* Removes the scroll bar from the page */
+}
+
+body::-webkit-scrollbar-track{
+    background: #1e1e24; /* Changes The color of the scroll track*/
+}
+
+body::-webkit-scrollbar-thumb{
+    background: #6649b8; /* Changes the color of the scroll thumb*/
+}
+
+main{
+    margin-left: 5rem;
+    padding: 1rem;
+}
+
+/*  Navbar Start */
