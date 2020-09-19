@@ -1,6 +1,6 @@
 :root {
   font-size: 16px;
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   --text-primary: #b6b6b6;
   --text-secondary: #ececec;
   --bg-primary: #23232e;
@@ -8,26 +8,27 @@
   --transition-speed: 600ms;
 }
 
-*{
-    box-sizing: border-box;
-    padding: 0;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-body::-webkit-scrollbar{
- width: 0.25rem;  /* Removes the scroll bar from the page */
+body::-webkit-scrollbar {
+  width: 0.25rem; /* Removes the scroll bar from the page */
 }
 
-body::-webkit-scrollbar-track{
-    background: #1e1e24; /* Changes The color of the scroll track*/
+body::-webkit-scrollbar-track {
+  background: #1e1e24; /* Changes The color of the scroll track*/
 }
 
-body::-webkit-scrollbar-thumb{
-    background: #6649b8; /* Changes the color of the scroll thumb*/
+body::-webkit-scrollbar-thumb {
+  background: #6649b8; /* Changes the color of the scroll thumb*/
 }
 
-main{
-    margin-left: 5rem;
-    padding: 1rem;
+main {
+  margin-left: 5rem;
+  padding: 1rem;
 }
 
 /*  Navbar Start */
@@ -35,37 +36,42 @@ main{
 .navbar {
   position: fixed;
   background-color: var(--bg-primary);
-  /* transition: width 600ms ease; */
+  transition: width 600ms ease;
   /* overflow: scroll; */
 }
 
 .navbar-nav {
   list-style: none;
-  /* padding: 0;
-  margin: 0; */
+  padding: 0;
+  margin: 0;
   display: flex;
   flex-direction: column;
-  align-items: center; 
-   height: 100%;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 
- 
-.nav-item{
-    width: 100%;
-} 
+.nav-item {
+  width: 100%;
+}
 
 .nav-item:last-child {
-  margin-top: auto;
+  margin-top: auto; /* Positions the flex item to the bottom */
 }
 
 .nav-link {
   display: flex;
   align-items: center;
-  height: 5rem;
+  height: 4rem;
   color: var(--text-primary);
   text-decoration: none;
   filter: grayscale(100%) opacity(0.7);
   transition: var(--transition-speed);
+}
+
+.link-text {
+  display: none;
+  margin-left: 1rem;
 }
 
 .nav-link:hover {
@@ -74,7 +80,139 @@ main{
   color: var(--text-secondary);
 }
 
-.link-text {
+.nav-link svg {
+  width: 2rem;
+  min-width: 2rem;
+  margin: 0 1.5rem;
+}
+
+.navbar:hover .link-text {
+  display: block;
+}
+/* .fa-primary {
+  color: #ff7eee;
+} */
+.fa-secondary {
+  color: #df49a6;
+}
+
+.fa-primary,
+.fa-secondary {
+  transition: var(--transition-speed);
+}
+
+.logo {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: var(--text-secondary);
+  background: var(--bg-secondary);
+  font-size: 1.5rem;
+  letter-spacing: 0.3ch;
+  width: 100%;
+}
+
+.logo svg {
+  transform: rotate(0deg);
+  transition: var(--transition-speed);
+}
+
+/* .logo-text {
+  display: inline;
+  position: absolute;
+  left: -999px;
+  transition: var(--transition-speed);
+} */
+.navbar:hover .logo svg {
+  transform: rotate(-180deg);
+}
+
+/* Small Screen */
+
+@media only screen and (max-width: 600px) {
+  .navbar {
+    bottom: 0;
+    width: 100vw;
+    height: 4rem;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .navbar-nav {
+    flex-direction: row;
+  }
+
+  .nav-link {
+    justify-content: center;
+  }
+
+  main {
+    margin: 0;
+  }
+
+  .navbar:hover .link-text {
+    display: none;
+  }
+  .nav-item:last-child {
+    margin: 0 0 0 -1rem ;
+}
+
+}
+
+/* Large screens  */
+
+@media only screen and (min-width: 600px) {
+  .navbar {
+    top: 0;
+    width: 5rem;
+    height: 100vh;
+  }
+  .navbar:hover {
+    width: 16rem;
+  }
+
+  .navbar:hover .link-text {
+    display: inline;
+    transition: opacity var(--transition-speed);
+  }
+}
+
+.dark {
+  --text-primary: #b6b6b6;
+  --text-secondary: #ececec;
+  --bg-primary: #23232e;
+  --bg-secondary: #141418;
+}
+
+.light {
+  --text-primary: #1f1f1f;
+  --text-secondary: #000000;
+  --bg-primary: #ffffff;
+  --bg-secondary: #e4e4e4;
+}
+
+.solar {
+  --text-primary: #576e75;
+  --text-secondary: #35535c;
+  --bg-primary: #fdf6e3;
+  --bg-secondary: #f5e5b8;
+}
+
+.theme-icon {
   display: none;
-  margin-left: 1rem;
+}
+
+.dark #darkIcon {
+  display: block;
+}
+
+.light #lightIcon {
+  display: block;
+}
+
+.solar #solarIcon {
+  display: block;
 }
