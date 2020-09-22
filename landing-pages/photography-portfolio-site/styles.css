@@ -1,88 +1,112 @@
 /*Css*/
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display+SC|Roboto:300,400&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display+SC|Roboto:300,400&display=swap");
 /* Keeping the streak */
 
-@font-face{
-    font-family: Amostely Signature;
-    src: url(./AmostelySignature.ttf);
+@font-face {
+  font-family: Amostely Signature;
+  src: url(./AmostelySignature.ttf);
 }
 
-html{
-    font-family: "Roboto", sans-serif;
+html {
+  font-family: "Roboto", sans-serif;
 }
 
-a:hover{
-    text-decoration: none;
+a:hover {
+  text-decoration: none;
 }
 
 /* Header */
 
-header{
-    width: 100%;
-    height: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+header {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.signature{
-    color: #384147;
-    text-align: center;
-    user-select: none; /* stops you from copying text */
+.signature {
+  color: #384147;
+  text-align: center;
+  user-select: none; /* stops you from copying text */
 }
 
-.signature-heading{
-    font-family: 'Amostely Signature', cursive;
-    font-size: 50px;
-    text-decoration: 0;
+.signature-heading {
+  font-family: "Amostely Signature", cursive;
+  font-size: 50px;
+  text-decoration: 0;
 }
 
-.signature-subhead{
-    font-family: "Playfair Display SC",sans-serif;
-    font-size: 12px;
-    text-transform: uppercase;
-    margin-bottom: 0;
+.signature-subhead {
+  font-family: "Playfair Display SC", sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-bottom: 0;
 }
 
-.navbar{
-    background-color: #384147;
+.navbar {
+  background-color: #384147;
 }
 
 .navbar-toggler i {
-    color: #fff;
-    font-size: 25px;
+  color: #fff;
+  font-size: 25px;
 }
 
-.navbar-toggler .fa-times{
-    display: none;
+.navbar-toggler .fa-times {
+  display: none;
 }
 
-.navbar-toggler.menu-open .fa-bars{
-    display: none;
+.navbar-toggler.menu-open .fa-bars {
+  display: none;
 }
 
-.navbar-toggler.menu-open .fa-times{
-    display: block;
+.navbar-toggler.menu-open .fa-times {
+  display: block;
 }
 
-
-.navbar-nav{
-    padding: 20px;
+.navbar-nav {
+  padding: 20px;
 }
 
-.nav-link{
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 12px;
-    transition: opacity .5;
+.nav-link {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 12px;
+  transition: opacity 0.5;
 }
 
-.nav-link:hover{
-    color: #fff;
+.nav-link:hover {
+  color: #fff;
 }
 
 /* About */
 
 .about-content {
-    display: flex;
+  display: flex;
+  flex-direction: column;
 }
+
+.about-description {
+  width: 100%;
+  background-color: #fff;
+  padding: 40px;
+  outline: 5px solid rgba(56, 65, 71, 0.5);
+  outline-offset: -5px;
+  order: 2;
+  margin-top: 5px;
+}
+
+.about-input{
+    order: 1;
+}
+
+.about-image img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Gallery */
+
+
