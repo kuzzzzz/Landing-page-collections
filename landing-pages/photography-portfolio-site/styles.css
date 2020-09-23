@@ -185,6 +185,9 @@ header {
 .lightbox-content a:hover::after {
   opacity: 0.5;
 }
+.lightboxOverlay {
+  overflow: hidden;
+}
 
 /*  Testimonial */
 
@@ -239,42 +242,102 @@ header {
   color: #fff;
 }
 
-.carousel-indicators{
-    bottom: -40px;
+.carousel-indicators {
+  bottom: -40px;
 }
 
 .carousel-indicators li,
-.carousel-indicators li.active{
-    width: 10px;
-    height: 10px;
-    background-color:#384147;
-    border-radius: 100%;
+.carousel-indicators li.active {
+  width: 10px;
+  height: 10px;
+  background-color: #384147;
+  border-radius: 100%;
 }
-
 
 /* Footer */
 
-footer{
-    background-color: #151515;
-    text-align: center;
+footer {
+  background-color: #151515;
+  text-align: center;
 }
 
-footer h5{
-    color: #fff;
-    font-family: "Playfair Display SC", sans-serif;
+footer h5 {
+  color: #fff;
+  font-family: "Playfair Display SC", sans-serif;
 }
 
-.text-muted{
-    color: rgba(255, 255, 255, 0.7);
+.text-muted {
+  color: rgba(255, 255, 255, 0.7);
 }
 
-.input-group .btn{
-    background-color: #384147;
-    color:#fff;
-    transition: opacity .5s;
+.input-group .btn {
+  background-color: #384147;
+  color: #fff;
+  transition: opacity 0.5s;
 }
 
-.input-group .btn:hover{
-    opacity: .6;
+.input-group .btn:hover {
+  opacity: 0.6;
 }
 
+@media screen and (min-width: 768px) {
+  .navbar {
+    background-color: transparent;
+  }
+
+  .navbar-nav {
+    padding: 0;
+  }
+
+  .nav-link {
+    color: #384147;
+  }
+
+  .nav-link:hover {
+    color: inherit;
+  }
+
+  nav:hover .nav-link:not(:hover) {
+    opacity: 0.5;
+  }
+
+  .about-content {
+    position: relative;
+    display: block;
+  }
+
+  .about-description {
+    position: absolute;
+    top: 80%;
+    transform: translateY(-50%);
+    width: 60%;
+    outline-offset: -10px;
+  }
+
+  .about-image img {
+    width: 70%;
+    margin-left: auto;
+  }
+ 
+
+
+}
+
+@media screen and (min-width: 1200px) {
+  .about-description {
+    top: 50%;
+    width: 40%;
+    outline: 10px solid rgba(56, 65, 71, 0.5);
+    outline-offset: -20px;
+  }
+
+  .about-image img {
+    width: 80%;
+  }
+    .lb-close {
+    position: absolute;
+    float: none;
+    top: -20px;
+    right: 30px;
+  }
+}
