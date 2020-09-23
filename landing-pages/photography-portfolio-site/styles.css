@@ -97,92 +97,160 @@ header {
   margin-top: 5px;
 }
 
-.about-input{
-    order: 1;
+.about-input {
+  order: 1;
 }
 
-.about-image img{
-    width: 100%;
-    height: auto;
-    display: block;
+.about-image img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 /* Gallery */
 
-.section-heading{
-    position: relative;
-    display: block;
-    margin-bottom: 100px;
+.section-heading {
+  position: relative;
+  display: block;
+  margin-bottom: 100px;
 }
 
-
-.section-heading::before{
-    content: " ";
-    position: absolute;
-    background-color: rgba(56, 65, 71, 0.5);
-    width: 1px;
-    height: 50px;
-    top: 53px;
-    border-radius: 8px;
+.section-heading::before {
+  content: " ";
+  position: absolute;
+  background-color: rgba(56, 65, 71, 0.5);
+  width: 1px;
+  height: 50px;
+  top: 53px;
+  border-radius: 8px;
 }
 
-.heading-title{
-    font-family: "Playfair Display SC", sans-serif;
-    text-transform: uppercase;
-    color:#384147;
-    font-size: 22px;
+.heading-title {
+  font-family: "Playfair Display SC", sans-serif;
+  text-transform: uppercase;
+  color: #384147;
+  font-size: 22px;
 }
 
-.lightbox-content{
-    position: relative;
-    overflow: hidden;
+.lightbox-content {
+  position: relative;
+  overflow: hidden;
 }
 
-.lightbox-content img{
-    transition: transform 2s;
+.lightbox-content img {
+  transition: transform 2s;
 }
 
 .lightbox-content:hover img {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
 
-.lightbox-content a::before{
-    content: " ";
-    position: absolute;
-    top: 0;
-    left:0;
-    width: 100%;
-    height: 100%;
-    z-index: 100;
-    transition: background-color .5s;
+.lightbox-content a::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  transition: background-color 0.5s;
 }
 
-.lightbox-content a:hover::before{
-    background-color: rgba(0, 0, 0, 0.7);
+.lightbox-content a:hover::before {
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
-.lightbox-content a::after{
-    font-family: "Font Awesome 5 free";
-    content: "\f00e";
-    font-weight: 600;
-    position: absolute;
-    top: 50%;
-    left:50%;
-    transform: translate(-50%,-50%);
-    color: #fff;
-    font-size: 25px;
-    z-index: 101;
-    width: 70px;
-    height: 70px;
-    border: 3px solid #fff;
+.lightbox-content a::after {
+  font-family: "Font Awesome 5 free";
+  content: "\f00e";
+  font-weight: 600;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 25px;
+  z-index: 101;
+  width: 70px;
+  height: 70px;
+  border: 3px solid #fff;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  justify-content: center;
+  transition: opacity 0.5s;
+}
+
+.lightbox-content a:hover::after {
+  opacity: 0.5;
+}
+
+/*  Testimonial */
+
+.carousel {
+  padding: 0 20px;
+}
+
+.carousel .item {
+  color: #999;
+  font-size: 14px;
+  text-align: center;
+}
+
+.carousel .item .img-box {
+  width: 135px;
+  height: 135px;
+  margin: 0 auto;
+  padding: 5px;
+  border: 1px solid #384147;
+  border-radius: 100%;
+}
+
+.carousel .img-box img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 100%;
+}
+
+.carousel .testimonial {
+  padding: 25px;
+  font-style: italic;
+}
+
+.carousel .customer {
+  text-transform: uppercase;
+  color: #384147;
+  font-weight: 300;
+}
+
+.carousel .carousel-control {
+  width: 25px;
+  height: 25px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #384147;
+  border-radius: 100%;
+}
+
+.carousel-control i {
+  font-size: 18px;
+  color: #fff;
+}
+
+.carousel-indicators{
+    bottom: -40px;
+}
+
+.carousel-indicators li,
+.carousel-indicators li.active{
+    width: 10px;
+    height: 10px;
+    background-color:#384147;
     border-radius: 100%;
-    display: flex;
-    align-items: center;
-    opacity: 0;
-    justify-content: center;
-    transition: opacity .5s;
-    }
+}
 
-    .lightbox-content a:hover::after{
-        opacity: .5;
-    }
+
+/* Footer */
+
