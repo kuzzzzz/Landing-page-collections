@@ -254,3 +254,27 @@ header {
 
 /* Footer */
 
+footer{
+    background-color: #151515;
+    text-align: center;
+}
+
+footer h5{
+    color: #fff;
+    font-family: "Playfair Display SC", sans-serif;
+}
+
+.text-muted{
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.input-group .btn{
+    background-color: #384147;
+    color:#fff;
+    transition: opacity .5s;
+}
+
+.input-group .btn:hover{
+    opacity: .6;
+}
+
