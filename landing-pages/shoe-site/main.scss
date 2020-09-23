@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&display=swap");
 
-// Image sources is https://www.instagram.com/emorystoreid/ all rights reserved 
- 
+// Image sources is https://www.instagram.com/emorystoreid/ all rights reserved
+
 *,
 *::before,
 *::after {
@@ -27,47 +27,107 @@ p {
   margin: 0;
 }
 
+section {
+  padding: 7rem 0;
+}
 .container {
   width: 85%;
   max-width: 65rem;
   margin: 0 auto;
 }
 
+.split {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  & > * {
+    flex-basis: 30%;
+    min-width: 23rem;
+  }
+}
+.spacing > * + * {
+  margin-top: var(
+    --spacer,
+    2rem
+  ); // Targets all the element with elder brothers
+}
+
 .btn {
   display: inline-block;
   text-decoration: none;
-  color:  #fff;
+  color: #fff;
   font-weight: 700;
   text-decoration: uppercase;
   font-size: 1.125rem;
   padding: 0.5em 1.25em;
   background: var(--clr-accent, blue);
   border-radius: 0.25rem;
-  transition: transform 250ms ease-in-out,opacity 250ms linear;
+  transition: transform 250ms ease-in-out, opacity 250ms linear;
 }
 
 .btn:hover,
 .btn:focus {
   transform: scale(1.1);
-  opacity: .9;
+  opacity: 0.9;
 }
 
-.primary-title{
-    font-size: 4rem;
-    font-size:clamp(3rem,calc(5vw + 1rem),4.5rem); // smallest it can be is 3 largest it can be 4.5 and it grows in between
-    line-height:1;
-    text-transform: uppercase;
+.primary-title {
+  font-size: 4rem;
+  font-size: clamp(
+    3rem,
+    calc(5vw + 1rem),
+    4.5rem
+  ); // smallest it can be is 3 largest it can be 4.5 and it grows in between
+  line-height: 1;
+  text-transform: uppercase;
 }
 
-.hero{
-    color: rgb(231, 218, 218);
-    text-align: center;
-    padding: 15rem 0;
-    background: #222;
+.section-title {
+  text-align: center;
+  font-size: clamp(2.5rem, calc(5vw+1rem), 4rem);
+  line-height: 1;
+  color: #17353d;
+  margin-bottom: 5rem;
+}
 
-    @supports(background-blend-mode:multiply){
-        background: url(./img/emory_4.jpg) no-repeat center/cover,
-        radial-gradient(#444,#111);
-        background-blend-mode: multiply;
+.hero {
+  color: rgb(231, 218, 218);
+  text-align: center;
+  padding: 15rem 0;
+  background: #222;
+
+  @supports (background-blend-mode: multiply) {
+    background: url(./img/emory_4.jpg) no-repeat fixed center center,
+      radial-gradient(#444, #111);
+    background-blend-mode: multiply;
+    background-size: cover;
+  }
+}
+
+.featured {
+  background: #eee;
+
+  &__item {
+    display: block;
+    position: relative;
+    transform: scale(0.85);
+    transition: transform 250ms ease-in-out;
+
+    &:hover,
+    &:focus {
+      transform: scale(1);
     }
+    &::after {
+      content: " ";
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 100% 100% 0 0; // used to eqaul the height of the content to the image
+      border-radius: 50%;
+      background: #2193b0;
+      z-index: -1;
+    }
+  }
 }

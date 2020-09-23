@@ -25,10 +25,36 @@ p {
   margin: 0;
 }
 
+section {
+  padding: 7rem 0;
+}
+
 .container {
   width: 85%;
   max-width: 65rem;
   margin: 0 auto;
+}
+
+.split {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.split > * {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  min-width: 23rem;
+}
+
+.spacing > * + * {
+  margin-top: var(--spacer, 2rem);
 }
 
 .btn {
@@ -42,17 +68,17 @@ p {
   padding: 0.5em 1.25em;
   background: var(--clr-accent, blue);
   border-radius: 0.25rem;
-  -webkit-transition: opacity 250ms linear,-webkit-transform 250ms ease-in-out;
-  transition: opacity 250ms linear,-webkit-transform 250ms ease-in-out;
-  transition: transform 250ms ease-in-out,opacity 250ms linear;
-  transition: transform 250ms ease-in-out,opacity 250ms linear,-webkit-transform 250ms ease-in-out;
+  -webkit-transition: opacity 250ms linear, -webkit-transform 250ms ease-in-out;
+  transition: opacity 250ms linear, -webkit-transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out, opacity 250ms linear;
+  transition: transform 250ms ease-in-out, opacity 250ms linear, -webkit-transform 250ms ease-in-out;
 }
 
 .btn:hover,
 .btn:focus {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-  opacity: .9;
+  opacity: 0.9;
 }
 
 .primary-title {
@@ -60,6 +86,14 @@ p {
   font-size: clamp(3rem, calc(5vw + 1rem), 4.5rem);
   line-height: 1;
   text-transform: uppercase;
+}
+
+.section-title {
+  text-align: center;
+  font-size: clamp(2.5rem, calc(5vw+1rem), 4rem);
+  line-height: 1;
+  color: #17353d;
+  margin-bottom: 5rem;
 }
 
 .hero {
@@ -71,8 +105,40 @@ p {
 
 @supports (background-blend-mode: multiply) {
   .hero {
-    background: url(./img/emory_4.jpg) no-repeat center/cover, radial-gradient(#444, #111);
+    background: url(./img/emory_4.jpg) no-repeat fixed center center, radial-gradient(#444, #111);
     background-blend-mode: multiply;
+    background-size: cover;
   }
+}
+
+.featured {
+  background: #eee;
+}
+
+.featured__item {
+  display: block;
+  position: relative;
+  -webkit-transform: scale(0.85);
+          transform: scale(0.85);
+  -webkit-transition: -webkit-transform 250ms ease-in-out;
+  transition: -webkit-transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+}
+
+.featured__item:hover, .featured__item:focus {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.featured__item::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 100% 100% 0 0;
+  border-radius: 50%;
+  background: #2193b0;
+  z-index: -1;
 }
 /*# sourceMappingURL=main.css.map */
