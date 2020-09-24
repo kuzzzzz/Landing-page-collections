@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo&family=Lobster&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+main {
+  font-family: "Heebo" sans-serif;
+}
+img {
+  width: 100%;
+}
+ul {
+  margin-left: 2rem;
+}
+li {
+  padding-top: 1rem;
+}
+li img {
+  width: 50px;
+  height: 50px;
+  margin: 0;
+}
+.landing {
+  min-height: 100vh;
+  background-image: url(./img/008-bunting.svg);
+  background-repeat: repeat-x;
+  background-position: top center;
+  background-color: #edd5db;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 10vh;
+  /* padding: 0 2rem; */
+}
+
+.ballons {
+  display: flex;
+  list-style: none;
+}
+
+.ballons li {
+  /* padding-left: 10rem; */
+  font-size: 1.2rem;
+}
+
+#logo {
+  font-family: "lobster", cursive;
+  font-weight: bold;
+  color: #2e3838;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 3rem;
+  font-family: "lobster", cursive;
+  color: rgb(61, 61, 61);
+  text-align: center;
+}
+.frame {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  background-image: url(./img/007-fireworks.svg);
+  padding: 5rem;
+}
+.big-text::before {
+  background-image: url(./img/002-balloon-1.svg), url(./img/004-balloon-2.svg);
+  background-size: 100px 50px;
+  background-position: center;
+  display: block;
+  width: 100%;
+  height: 50px;
+  content: "";
+  margin-top: 2rem;
+  overflow: hidden;
+}
+
+/* .big-text{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-30%);
+    font-size: 5rem;
+    font-family: "lobster", cursive;
+    color: rgb(61, 61, 61);
+} */
+
+.intro {
+  background: rgb(201, 114, 114);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider {
+  background: rgb(61, 61, 61);
+  background-image: url(./img/nans2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+  z-index: 1;
+}
+
+.intro-text {
+  color: rgb(61, 61, 61);
+  font-family: "Heebo", sans-serif;
+  font-size: 3rem;
+}
+
+.hide {
+  background: rgb(201, 114, 114);
+  overflow: hidden;
+}
+
+.hide span {
+  transform: translateY(100%);
+  display: inline-block;
+}
+
+@media screen and (min-width: 760px) {
+  nav {
+    padding: 0 3rem;
+  }
+  .card {
+    flex-direction: row;
+    justify-content: center;
+    gap: 4rem;
+    flex: 1;
+  }
+  .frame {
+    width: 600px;
+    height: 80vh;
+  }
+}
