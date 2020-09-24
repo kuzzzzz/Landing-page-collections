@@ -105,7 +105,7 @@ section {
 
 @supports (background-blend-mode: multiply) {
   .hero {
-    background: url(./img/emory_4.jpg) no-repeat fixed center center, radial-gradient(#444, #111);
+    background: url(./img/emory_4.png) no-repeat fixed center center, radial-gradient(#444, #111);
     background-blend-mode: multiply;
     background-size: cover;
   }
@@ -113,6 +113,7 @@ section {
 
 .featured {
   background: #eee;
+  padding: 2rem 2rem;
 }
 
 .featured__item {
@@ -124,6 +125,14 @@ section {
   transition: -webkit-transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+  text-decoration: none;
+  color: #333;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.featured__item:last-of-type {
+  margin-top: -50px;
 }
 
 .featured__item:hover, .featured__item:focus {
@@ -131,14 +140,84 @@ section {
           transform: scale(1);
 }
 
+.featured__item:hover .featured__details, .featured__item:focus .featured__details {
+  opacity: 1;
+}
+
 .featured__item::after {
   content: " ";
   position: absolute;
-  top: 0;
-  left: 0;
-  padding: 100% 100% 0 0;
+  top: 10%;
+  left: 10%;
+  padding: 75% 75% 0 0;
   border-radius: 50%;
   background: #2193b0;
   z-index: -1;
+}
+
+.featured__details {
+  opacity: 0;
+  -webkit-transition: opacity 250ms linear;
+  transition: opacity 250ms linear;
+}
+
+.featured__details span {
+  display: block;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.product {
+  background: radial-gradient(var(--clr-inner, limegreen), var(--clr-outer, purple));
+  padding: 2rem;
+  border-radius: 1em;
+  margin-bottom: 5em;
+  text-align: center;
+}
+
+.product__title {
+  font-size: clamp(3rem, calc(5vw+1rem), 5.5rem);
+  text-transform: uppercase;
+  line-height: 1;
+  margin-top: -27px;
+  color: #fff;
+  text-shadow: 0 0 0.2em rgba(0, 0, 0, 0.2);
+}
+
+.product__image {
+  margin: -6em 0 0 0;
+}
+
+@media (min-width: 45em) {
+  .product {
+    text-align: left;
+    margin-bottom: 9em;
+  }
+  .product__image {
+    float: right;
+    width: 50%;
+  }
+}
+
+.hero {
+  --clr-accent: #e48d00;
+}
+
+.product__1 {
+  --clr-inner: #faa700;
+  --clr-outer: #e48d00;
+  --clr-accent: #a1173c;
+}
+
+.product__2 {
+  --clr-inner: #fce4b3;
+  --clr-outer: #eac886;
+  --clr-accent: #2f4858;
+}
+
+.product__3 {
+  --clr-inner: #6dd53d;
+  --clr-outer: #2193b0;
+  --clr-accent: #008951;
 }
 /*# sourceMappingURL=main.css.map */

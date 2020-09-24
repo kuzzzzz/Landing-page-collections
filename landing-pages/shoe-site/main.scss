@@ -30,6 +30,7 @@ p {
 section {
   padding: 7rem 0;
 }
+
 .container {
   width: 85%;
   max-width: 65rem;
@@ -99,7 +100,7 @@ section {
   background: #222;
 
   @supports (background-blend-mode: multiply) {
-    background: url(./img/emory_4.jpg) no-repeat fixed center center,
+    background: url(./img/emory_4.png) no-repeat fixed center center,
       radial-gradient(#444, #111);
     background-blend-mode: multiply;
     background-size: cover;
@@ -108,26 +109,104 @@ section {
 
 .featured {
   background: #eee;
+padding: 2rem 2rem;
 
   &__item {
     display: block;
     position: relative;
     transform: scale(0.85);
     transition: transform 250ms ease-in-out;
+    text-decoration: none;
+    color: #333;
+    text-align: center;
+    line-height: 1.2;
+
+    &:last-of-type{
+      margin-top: -50px;
+    }
 
     &:hover,
     &:focus {
       transform: scale(1);
+
+      .featured__details {
+        opacity: 1;
+      }
     }
     &::after {
       content: " ";
       position: absolute;
-      top: 0;
-      left: 0;
-      padding: 100% 100% 0 0; // used to eqaul the height of the content to the image
+      top: 10%;
+      left: 10%;
+      padding: 75% 75% 0 0; // used to eqaul the height of the content to the image
       border-radius: 50%;
       background: #2193b0;
       z-index: -1;
     }
   }
+
+  &__details {
+    opacity: 0;
+    transition: opacity 250ms linear;
+    span {
+      display: block;
+      font-weight: 700;
+      font-size: 2.5rem;
+    }
+  }
+}
+
+.product {
+  background: radial-gradient(
+    var(--clr-inner, limegreen),
+    var(--clr-outer, purple)
+  );
+  padding: 2rem;
+  border-radius: 1em;
+  margin-bottom: 5em;
+  text-align: center;
+  // max-width: 1020px;
+
+  &__title {
+    font-size: clamp(3rem, calc(5vw+1rem), 5.5rem);
+    text-transform: uppercase;
+    line-height: 1;
+    margin-top: -27px;
+    color: #fff;
+    text-shadow: 0 0 0.2em rgba(#000, 0.2);
+  }
+  &__image {
+    margin: -6em 0 0 0;
+  }
+  @media (min-width: 45em) {
+    text-align: left;
+    margin-bottom: 9em;
+    &__image {
+      float: right;
+      width: 50%;
+      // outline: 2px solid red;               // handie styling that goes with floats
+      // shape-outside:url(./img/emory_6.png);
+      // shape-margin: 1rem;
+      // margin: 0 -5rem 0 0 ;
+    }
+  }
+}
+
+.hero {
+  --clr-accent: #e48d00;
+}
+.product__1 {
+  --clr-inner: #faa700;
+  --clr-outer: #e48d00;
+  --clr-accent: #a1173c;
+}
+.product__2 {
+  --clr-inner: #fce4b3;
+  --clr-outer: #eac886;
+  --clr-accent: #2f4858;
+}
+.product__3 {
+  --clr-inner: #6dd53d;
+  --clr-outer: #2193b0;
+  --clr-accent: #008951;
 }
