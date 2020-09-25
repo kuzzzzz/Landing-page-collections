@@ -65,12 +65,20 @@ section {
   display: inline-flex;
   align-items: center;
 }
+
+.form-btn{
+  margin-top: 2.5rem;
+  cursor: pointer;
+}
+
 .container {
   width: 100%;
   max-width: 128rem;
   padding: 0 1.5rem;
   margin: 0 auto;
 }
+
+/* Reusable styles */
 
 /* Header styles */
 
@@ -208,4 +216,44 @@ section {
   font-size: 2.4rem;
   margin-left: 0.5rem;
   opacity: 0.75;
+}
+
+/* Boooking section */
+.booking {
+  background-image: var(--gradient-color);
+}
+
+.input-group {
+  margin-bottom: 1.5rem;
+}
+
+.input-label {
+  display: block;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.input,
+.options {
+  outline: none;
+  border: none;
+  width: 100%;
+  min-height: 4rem;
+  padding: 1rem;
+  font-weight: bold;
+  color: #aa55aa;
+  letter-spacing: 2px;
+  font-family: "Open Sans", sans-serif;
+  resize: none;
+}
+
+.btn-purple{
+  background-color: var(--purple-solid);
+}
+
+.btn-purple:hover{
+  background-color: #56247f;
 }
