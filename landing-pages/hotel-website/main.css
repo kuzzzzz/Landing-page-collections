@@ -19,3 +19,29 @@
     --gradient-color: linear-gradient(to right, var(--yellow-solid), var(--purple-light));
     --gradient-color-alt: linear-gradient(to right, var(--purple-light), var(--yellow-solid));
 }
+
+/* Global styles */
+html{
+    font-size: 10px;
+}
+
+body{
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.6rem;
+    color: var(--dark-color);
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul{
+    list-style: none;
+}
+
+section{
+    padding: 5rem 0;
+}
+
+/* Header styles */
