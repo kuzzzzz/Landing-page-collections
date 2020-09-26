@@ -66,18 +66,39 @@ section {
   align-items: center;
 }
 
-.form-btn{
-  margin-top: 2.5rem;
-  cursor: pointer;
-}
-
 .container {
   width: 100%;
   max-width: 128rem;
   padding: 0 1.5rem;
   margin: 0 auto;
 }
+.form-btn {
+  margin-top: 2.5rem;
+  cursor: pointer;
+}
 
+.btn-gradient {
+  background-image: var(--gradient-color);
+}
+
+.btn-gradient:hover {
+  background-image: var(--gradient-color-alt);
+}
+
+.dots {
+  font-size: 2.4rem;
+  margin-left: 0.5rem;
+  opacity: 0.75;
+}
+
+.btn-purple {
+  background-color: var(--purple-solid);
+  transition: background-color 0.5s;
+}
+
+.btn-purple:hover {
+  background-color: #56247f;
+}
 /* Reusable styles */
 
 /* Header styles */
@@ -204,20 +225,6 @@ section {
   font-family: "Courgette", cursive;
 }
 
-.btn-gradient {
-  background-image: var(--gradient-color);
-}
-
-.btn-gradient:hover {
-  background-image: var(--gradient-color-alt);
-}
-
-.dots {
-  font-size: 2.4rem;
-  margin-left: 0.5rem;
-  opacity: 0.75;
-}
-
 /* Boooking section */
 .booking {
   background-image: var(--gradient-color);
@@ -250,10 +257,85 @@ section {
   resize: none;
 }
 
-.btn-purple{
-  background-color: var(--purple-solid);
+::placeholder {
+  color: inherit;
 }
 
-.btn-purple:hover{
-  background-color: #56247f;
+/* Featured hotels section */
+
+.section-head {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.heading {
+  display: block;
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+
+.sub-heading {
+  font-size: 1.7rem;
+  font-family: "Courgette", cursive;
+  font-weight: 100;
+  color: #a5a5a5;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 2.5rem;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.featured-hotels {
+  height: 35rem;
+  color: #fff;
+  padding: 1rem;
+  position: relative;
+  z-index: 0;
+}
+
+.featured-hotels::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--purple-transparent-alt);
+  z-index: -1;
+}
+
+.hotel-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
+
+
+.hotel-name{
+  font-size: 2.4rem;
+}
+
+.hotel-price{
+  font-size: 1.8rem;
+}
+
+.hotel-rating{
+  margin: 1rem 0 2.5rem;
+}
+
+.rating{
+  color: var(--yellow-solid);
 }
