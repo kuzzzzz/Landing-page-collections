@@ -693,10 +693,12 @@ section {
   .room-info-wrap {
     margin-left: 1.5rem;
   }
+  
 }
 
 @media screen and (min-width: 1200px) {
   .book-form .input-group:first-child {
     flex: 0 0 30%;
   }
+
 }
