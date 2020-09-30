@@ -23,8 +23,20 @@ section button {
   font-family: Montserrat;
 }
 
+.link-container {
+  display: flex;
+  justify-content: space-around;
+}
+.link-container a {
+  text-decoration: none;
+  color: #fff;
+  background-color: rgb(109, 91, 91);
+  padding: 1rem;
+  border-radius: 20px;
+}
+
 @media screen and (min-width: 1000px) {
-  section  {
-padding: 0 5rem;
+  section {
+    padding: 0 5rem;
   }
 }

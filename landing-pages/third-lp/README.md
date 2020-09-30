@@ -13,4 +13,4 @@ Clone The repo to your local maching
 or View the Hosted version [here](https://kuzzzzz.github.io/Lp-collection/landing-pages/third-lp/index.html)
 
 ### Issues
-- Price Table not Responsive
+- Price Table not Responsive on mobile
