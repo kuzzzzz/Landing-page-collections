@@ -1,9 +1,10 @@
-# Pure CSS Hamburger Menu & Overlay
-This was a Tutorial By **Traversy Media**, The course can be found [here](https://www.youtube.com/watch?v=DZg6UfS5zYg&list=WL&index=107) on YouTube.
+# Bootstrap store
+This was a Tutorial By **Daily Tution**, The course can be found [here](https://www.youtube.com/watch?v=36jRXMsIFuA&list=WL&index=94&t=0s) on YouTube.
 
 ## Technologies used
 - HTML
 - CSS
+- Javascript scroll library
 
 
 
@@ -11,7 +12,7 @@ This was a Tutorial By **Traversy Media**, The course can be found [here](https:
 Clone The repo to your local maching 
 `git clone https://github.com/kuzzzzz/Lp-collection.git`
 
-or View the Hosted version [here](https://kuzzzzz.github.io/Lp-collection/util/fullscreen-hamburger-menu/index.html)
+or View the Hosted version [here](https://kuzzzzz.github.io/Lp-collection/landing-pages/bootstrap-store/index.html)
 
 ### Issues
-- None so far.
+- Incomplete
