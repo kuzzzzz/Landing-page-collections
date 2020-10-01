@@ -1,4 +1,4 @@
-# Product landing page
+# Product(headphones) landing page
 This was a Tutorial By **Traversy Media**, The course can be found [here](https://www.youtube.com/watch?v=61R5kn_kYwY&list=WL&index=110&t=183s) on YouTube.
 
 ## Technologies used
