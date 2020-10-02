@@ -1,4 +1,4 @@
-# Frontend Mentor - Huddle landing page with single introductory section
+# Frontend Mentor - Huddle Singleton
 
 ![Design preview for the Huddle landing page with single introductory section](./design/desktop-preview.jpg)
 
@@ -8,7 +8,7 @@ Thanks for checking out this front-end coding challenge.
 
 [Frontend Mentor](https://www.frontendmentor.io) challenges allow you to improve your skills in a real-life workflow.
 
-This was a Tutorial By **Florin Pop**, The course can be found [here](https://www.youtube.com/watch?v=wnb-BfjR-oo&list=WL&index=106&t=12s) on YouTube.
+This was a Tutorial By **Florin Pop**, The course can be found [here](https://www.youtube.com/watch?v=ObrYwPRyeqc&list=WL&index=18&t=0s) on YouTube.
 
 ## Technologies used
 - HTML
