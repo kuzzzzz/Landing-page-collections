@@ -1,5 +1,5 @@
-# Pure CSS Hamburger Menu & Overlay
-This was a Tutorial By **Traversy Media**, The course can be found [here](https://www.youtube.com/watch?v=DZg6UfS5zYg&list=WL&index=107) on YouTube.
+# Spotify landig page
+This was a Tutorial By **Web Dev simplified** and designed by **Dev Ed**, The course can be found [here](https://www.youtube.com/watch?v=RZ-Oe4_Ew7g&feature=youtu.be) on YouTube.
 
 ## Technologies used
 - HTML
@@ -11,7 +11,7 @@ This was a Tutorial By **Traversy Media**, The course can be found [here](https:
 Clone The repo to your local maching 
 `git clone https://github.com/kuzzzzz/Lp-collection.git`
 
-or View the Hosted version [here](https://kuzzzzz.github.io/Lp-collection/util/fullscreen-hamburger-menu/index.html)
+or View the Hosted version [here](https://kuzzzzz.github.io/Lp-collection/landing-pages/Spotify-Landing-Page-Redesign-master/index.html)
 
 ### Issues
 - None so far.

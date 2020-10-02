@@ -1,9 +1,10 @@
-# Pure CSS Hamburger Menu & Overlay
-This was a Tutorial By **Traversy Media**, The course can be found [here](https://www.youtube.com/watch?v=DZg6UfS5zYg&list=WL&index=107) on YouTube.
+# Full page Animation with JavaScript
+This was a Tutorial By **Dev Ed**, The course can be found [here](https://www.youtube.com/watch?v=sN93DRYkCO8&list=WL&index=10) on YouTube. 
 
 ## Technologies used
 - HTML
 - CSS
+- Javascript
 
 
 

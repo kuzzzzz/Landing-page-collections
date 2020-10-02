@@ -1,9 +1,10 @@
-# Pure CSS Hamburger Menu & Overlay
-This was a Tutorial By **Traversy Media**, The course can be found [here](https://www.youtube.com/watch?v=DZg6UfS5zYg&list=WL&index=107) on YouTube.
+# Shoe website
+This was a Tutorial By **Kelvin powell** on  **Traversy Media** chanel, The course can be found [here](https://www.youtube.com/watch?v=X1dz0xRbSJc&list=WL&index=11) on YouTube.
 
 ## Technologies used
 - HTML
 - CSS
+- JavaScript
 
 
 
@@ -14,4 +15,4 @@ Clone The repo to your local maching
 or View the Hosted version [here](https://kuzzzzz.github.io/Lp-collection/util/fullscreen-hamburger-menu/index.html)
 
 ### Issues
-- None so far.
+- Some overflow issue.
