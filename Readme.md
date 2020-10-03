@@ -27,5 +27,26 @@ This Repository contains various single page websites and components from tutori
 22. [Photography Site](landing-pages/photography-portfolio-site/README.md)
 23. [Shoe](landing-pages/shoe-site/README.md)
 24. [Hotel Site](landing-pages/hotel-website/README.md)
+25. [Monograph-Lp](landing-pages/project-tracking-intro-component-master/README.md)
 
 # Components
+. [Animated-Responsive-Navbar](util/Animated-Responsive-Navbar/README.md)
+2. [Animated-sign-in-up-form](util/Animated-sign-in-up-form/README.md)
+3. [background-video](util/background-video/README.md)
+4. [card-design](util/card-design/README.md)
+5. [faq-component](util/faq-component/README.md
+6. [float-effect](util/float-effect/README.md)
+7. [fluid-Image-popup](util/fluid-Image-popup/README.md)
+8. [four-card-feature-section](util/four-card-feature-section/README.md)
+9. [full-page-animation](util/full-page-animation/README.md)
+10. [fullscreen-Hamburger-menu](util/fullscreen-Hamburger-menu/README.md
+11. [huddle-landing-page-with-single-introductory-section-master](util/huddle-landing-page-with-single-introductory-section-master/README.md)
+12. [Pricing-component](util/Pricing-component/README.md)
+13. [Responsive-nav-bar](util/Responsive-nav-bar/README.md
+14. [sign-up-form](util/sign-up-form/README.md
+15. [single-price-component](util/single-price-component/README.md)
+16. [Slider-component](util/Slider-component/README.md
+17. [Smooth-Scroll](util/Smooth-Scroll/README.md)
+18. [toggle-dark-mode](util/toggle-dark-mode/README.md)
+
+_All projects are open source and licensed for use free use by original authors_
