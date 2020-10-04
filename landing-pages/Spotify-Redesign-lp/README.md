@@ -11,7 +11,7 @@ This was a Tutorial By **Web Dev simplified** and designed by **Dev Ed**, The co
 Clone The repo to your local maching 
 `git clone https://github.com/kuzzzzz/Lp-collection.git`
 
-or View the Hosted version [here](https://kuzzzzz.github.io/Lp-collection/landing-pages/Spotify-Landing-Page-Redesign-master/index.html)
+or View the Hosted version [here](https://kuzzzzz.github.io/Lp-collection/landing-pages/Spotify-Redesign-lp/index.html)
 
 ### Issues
 - None so far.

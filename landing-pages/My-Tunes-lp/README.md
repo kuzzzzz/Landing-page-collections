@@ -10,7 +10,7 @@ This was a Tutorial By **Traversy Media**, The course can be found [here](https:
 Clone The repo to your local maching 
 `git clone https://github.com/kuzzzzz/Lp-collection.git`
 
-or View the Hosted version [here](https://kuzzzzz.github.io/Lp-collection/landing-pages/seventh-lp/index.html)
+or View the Hosted version [here](https://kuzzzzz.github.io/Lp-collection/landing-pages/My-Tunes-lp/index.html)
 
 ### Issues
 - None so far.
