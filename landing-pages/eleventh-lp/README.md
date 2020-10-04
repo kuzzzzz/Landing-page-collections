@@ -1,4 +1,4 @@
-# Frontend Mentor - Base Apparel Coming soon page 
+# Frontend Mentor - Clipboard Landing page
 
 ![Design preview for the Huddle landing page with single introductory section](./design/desktop-preview.jpg)
 

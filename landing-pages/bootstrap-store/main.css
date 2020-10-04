@@ -7,7 +7,7 @@ font-family: 'Sofia', cursive; */
 
 :root {
   --light-gray: #2b3032a1;
-  --primary-color: #45ccb8;
+  --primary-color: #d2e9e5;
   --border: #2b303218;
   --text-color: #ffb86b;
 }
@@ -65,7 +65,7 @@ header.site-title {
 
 .site-slider {
   position: relative;
-  background: radial-gradient(#45ccb8, #fff);
+  background: radial-gradient(#d2e9e5, #fff);
 }
 .position-top {
   position: absolute;

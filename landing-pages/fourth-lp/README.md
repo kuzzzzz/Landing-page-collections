@@ -1,4 +1,4 @@
-# Netflix Landing Page Clone
+# Laptop UI
 This was a Tutorial By **Dev Ed**, The course can be found [here](https://www.youtube.com/watch?v=ZeDP-rzOnAA&list=WL&index=113) on YouTube.
 
 ## Technologies used

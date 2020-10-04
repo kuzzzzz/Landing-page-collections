@@ -12,7 +12,7 @@ This was a Tutorial By **Kelvin powell** on  **Traversy Media** chanel, The cour
 Clone The repo to your local maching 
 `git clone https://github.com/kuzzzzz/Lp-collection.git`
 
-or View the Hosted version [here](https://kuzzzzz.github.io/Lp-collection/util/fullscreen-hamburger-menu/index.html)
+or View the Hosted version [here](https://kuzzzzz.github.io/Lp-collection/landing-pages/shoe-site/index.html)
 
 ### Issues
 - Some overflow issue.

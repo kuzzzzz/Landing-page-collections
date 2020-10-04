@@ -12,7 +12,7 @@ This was a Tutorial By **Dev Ed**, The course can be found [here](https://www.yo
 Clone The repo to your local maching 
 `git clone https://github.com/kuzzzzz/Lp-collection.git`
 
-or View the Hosted version [here](https://kuzzzzz.github.io/Lp-collection/util/fluid-image-popup/index.html)
+or View the Hosted version [here](https://kuzzzzz.github.io/Lp-collection/util/fluid-Image-popup/index.html)
 
 ### Issues
 - None so far.

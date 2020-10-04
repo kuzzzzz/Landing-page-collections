@@ -1,4 +1,4 @@
-# Frontend Mentor - Base Apparel Coming soon page 
+# Frontend Mentor - Insure Landing page
 
 ![Design preview for the Huddle landing page with single introductory section](./design/desktop-preview.jpg)
 
@@ -19,7 +19,7 @@ This was a Tutorial By **Florin Pop**, The course can be found [here](https://ww
 Clone The repo to your local maching 
 `git clone https://github.com/kuzzzzz/Lp-collection.git`
 
-or View the Hosted version [here](https://kuzzzzz.github.io/Lp-collection/util/huddle-landing-page-with-single-introductory-section-master/index.html)
+or View the Hosted version [here](https://kuzzzzz.github.io/Lp-collection/landing-pages/tenth-lp/index.html)
 
 ### Issues
 - None so far.

@@ -15,4 +15,4 @@ Clone The repo to your local maching
 or View the Hosted version [here](https://kuzzzzz.github.io/Lp-collection/landing-pages/bootstrap-store/index.html)
 
 ### Issues
-- Incomplete
+- Incomplete Still under construction
