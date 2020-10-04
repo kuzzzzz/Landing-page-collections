@@ -30,7 +30,7 @@ This Repository contains various single page websites and components from tutori
 25. [Monograph-Lp](landing-pages/project-tracking-intro-component-master/README.md)
 
 # Components
-. [Animated-Responsive-Navbar](util/Animated-Responsive-Navbar/README.md)
+1. [Animated-Responsive-Navbar](util/Animated-Responsive-Navbar/README.md)
 2. [Animated-sign-in-up-form](util/Animated-sign-in-up-form/README.md)
 3. [background-video](util/background-video/README.md)
 4. [card-design](util/card-design/README.md)
@@ -41,6 +41,7 @@ This Repository contains various single page websites and components from tutori
 9. [full-page-animation](util/full-page-animation/README.md)
 10. [fullscreen-Hamburger-menu](util/fullscreen-Hamburger-menu/README.md
 11. [huddle-landing-page-with-single-introductory-section-master](util/huddle-landing-page-with-single-introductory-section-master/README.md)
+
 12. [Pricing-component](util/Pricing-component/README.md)
 13. [Responsive-nav-bar](util/Responsive-nav-bar/README.md
 14. [sign-up-form](util/sign-up-form/README.md
@@ -50,3 +51,5 @@ This Repository contains various single page websites and components from tutori
 18. [toggle-dark-mode](util/toggle-dark-mode/README.md)
 
 _All projects are open source and licensed for use free use by original authors_
+
+view main page [here](https://kuzzzzz.github.io/Lp-collection/)
