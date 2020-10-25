@@ -35,45 +35,52 @@
 
 /* Background & colored buttons */
 .bg-primary,
-.btn-primary{
+.btn-primary {
   background-color: var(--primary-color);
   color: #fff;
 }
 .bg-secondary,
-.btn-secondary{
+.btn-secondary {
   background-color: var(--secondary-color);
   color: #fff;
 }
 .bg-dark,
-.btn-dark{
+.btn-dark {
   background-color: var(--dark-color);
   color: #fff;
 }
 .bg-light,
-.btn-light{
+.btn-light {
   background-color: var(--light-color);
   color: #333;
 }
 
-
+.bg-primary a,
+.btn-primary a,
+.bg-secondary a,
+.btn-secondary a,
+.bg-dark a,
+.btn-dark a {
+  color: #fff;
+}
 /* Text sizes */
-.lead{
+.lead {
   font-size: 20px;
 }
 
-.sm{
-  font-size: 1re,;
+.sm {
+  font-size: 1re;
 }
 
-.md{
+.md {
   font-size: 2rem;
 }
 
-.lg{
+.lg {
   font-size: 3rem;
 }
 
-.xl{
+.xl {
   font-size: 4rem;
 }
 
