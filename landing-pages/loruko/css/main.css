@@ -282,6 +282,10 @@ pre {
   }
 }
 
+.hidden{
+  visibility: hidden;
+  height: 0;
+}
 /* Tablets and under */
 @media (max-width: 768px) {
   .grid,
