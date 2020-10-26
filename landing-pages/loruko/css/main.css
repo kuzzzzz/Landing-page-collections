@@ -181,6 +181,15 @@ img {
   font-size: 20px;
   margin-bottom: 16px;
 }
+/* Features */
+.features-head img {
+  width: 200px;
+  justify-self: flex-end;
+}
+.features-sub-head img {
+  width: 300px;
+  justify-self: flex-end;
+}
 
 /* Footer  */
 
